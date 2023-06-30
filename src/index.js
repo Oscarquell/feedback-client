@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:3001';
+axios.defaults.baseURL = 'https://feedback-server.vercel.app/';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
