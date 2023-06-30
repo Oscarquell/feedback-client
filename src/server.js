@@ -2,8 +2,6 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const smtpTransport = require('nodemailer-smtp-transport');
 
-// tedst
-
 const app = express();
 app.use(express.json());
 
@@ -50,6 +48,6 @@ app.post('/send-feedback', (req, res) => {
     });
 });
 
-app.listen(3001, () => {
+app.listen(3001, 'https://argen-lilac.vercel.app/', () => {
     console.log('Server is running on port 3001');
 });
