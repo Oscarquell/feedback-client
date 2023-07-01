@@ -22,7 +22,7 @@ const FirstSection = () => {
     };
 
     return (
-        <div>
+        <div className='first-section-bg'>
             <div className="first-section-img">
                 <motion.div
                     initial={{x: -30, opacity: 0}}
@@ -59,6 +59,24 @@ const FirstSection = () => {
                 </Slider>
 
             </div>
+
+            <motion.div
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{ ease: "easeInOut", duration: 1 }}
+                viewport={{ once: true }}
+                className="first-section-quote">
+                "Счастье влюбленных - это солнце, светящееся для двоих."
+            </motion.div>
+            <motion.div
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{ ease: "easeInOut", duration: 2 }}
+                viewport={{ once: true }}
+                className="first-section-quote-author">
+                (с) Филип Бэрри
+            </motion.div>
+
         </div>
     );
 };

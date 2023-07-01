@@ -1,0 +1,14 @@
+.second-section-photos {
+    padding: 5vh 5vh 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: max-content;
+
+}
+
+.second-section-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
