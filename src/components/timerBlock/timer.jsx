@@ -86,19 +86,19 @@ const TimerBlock = () => {
             </div>
             <div className="feedback-section-timer-wrap">
                 <div className="feedback-section-timer-app">
-                    <p className='feedback-section-timer'>{time.d} :</p>
+                    <p className='feedback-section-timer'>{time.d}</p>
                     <p className='feedback-section-timer-description'>Дни</p>
                 </div>
                 <div className="feedback-section-timer-app">
-                    <p className='feedback-section-timer'> &nbsp;{time.h} :</p>
+                    <p className='feedback-section-timer'>{time.h}</p>
                     <p className='feedback-section-timer-description'>Часы</p>
                 </div>
                 <div className="feedback-section-timer-app">
-                    <p className='feedback-section-timer'>&nbsp;{time.m} :</p>
+                    <p className='feedback-section-timer'>{time.m}</p>
                     <p className='feedback-section-timer-description'>Мин</p>
                 </div>
                 <div className="feedback-section-timer-app">
-                    <p className='feedback-section-timer'>&nbsp;{time.s}</p>
+                    <p className='feedback-section-timer'>{time.s}</p>
                     <p className='feedback-section-timer-description'>Сек</p>
                 </div>
             </div>

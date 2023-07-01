@@ -1,4 +1,47 @@
 .footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
     width: 100%;
-    height: 5vh;
+    height: auto
+}
+
+.footer-title {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2em;
+    margin-bottom: 1em;
+}
+
+.footer-link {
+    display: block;
+    width: 2em;
+    height: 2em;
+    padding: 0 3em 0 3em;
+}
+
+.footer-icons {
+    width: 2em;
+    height: 2em;
+}
+
+.instagram {
+    display: block;
+    background: url("../../../src/media/icons/instagram.png") center center/cover no-repeat;
+}
+
+.whatsapp {
+    display: block;
+    background: url("../../../src/media/icons/whatsapp.png") center center/cover no-repeat;
+}
+
+.telegram {
+    display: block;
+    background: url("../../../src/media/icons/telegram.png") center center/cover no-repeat;
 }
