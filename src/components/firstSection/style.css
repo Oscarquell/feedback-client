@@ -1,0 +1,29 @@
+.first-section-img {
+    background: black;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.first-section-description {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 2em;
+    padding: 0 1vh;
+}
+
+.first-section-photo-block {
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.first-section-photo {
+    max-width: 100%;
+    height: auto;
+}

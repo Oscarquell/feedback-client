@@ -1,10 +1,10 @@
 import './App.css';
-import FeedbackForm from "./feedback";
+import FirstSection from "./components/firstSection";
 
 function App() {
   return (
     <div className="App">
-        <FeedbackForm />
+      <FirstSection />
     </div>
   );
 }
