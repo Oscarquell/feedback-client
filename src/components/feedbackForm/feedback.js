@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './style.css'
 
 const FeedbackForm = () => {
     const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+    const [secondName, setSecondName] = useState('')
     const [message, setMessage] = useState('');
+    const [isSended, SetIsSended] = useState(false)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -13,39 +14,63 @@ const FeedbackForm = () => {
         try {
             await axios.post('/send-feedback', {
                 name,
-                email,
+                secondName,
                 message
             });
-            alert('Ваше сообщение отправлено!');
+            SetIsSended(true)
             setName('');
-            setEmail('');
+            setSecondName('');
             setMessage('');
         } catch (error) {
-            console.error('Ошибка при отправке сообщения:', error);
+            alert('Ошибка при отправке сообщения', error)
         }
     };
 
+    useEffect(() => {
+        setTimeout(() => {
+            SetIsSended(false);
+        }, 3000);
+    }, [isSended]);
+
     return (
-        <form onSubmit={handleSubmit}>
-            <input
-                type="text"
-                placeholder="Имя"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-            />
-            <input
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-            />
-            <textarea
-                placeholder="Сообщение"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-            />
-            <button type="submit">Отправить</button>
-        </form>
+        <div className='feedback-from-bg'>
+
+            <h2 className='feedback-form-title'>АНКЕТА ГОСТЯ</h2>
+            <p className="feedback-form-description">
+                Пожалуйста, подтвердите свое присутствие на торжестве до 20 июля
+            </p>
+
+            <form onSubmit={handleSubmit}>
+                <input
+                    className='feedback-form-input'
+                    type="text"
+                    placeholder="Введите Ваше имя"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
+                <input
+                    className='feedback-form-input'
+                    type="text"
+                    placeholder="Введите Вашу фамилию"
+                    value={secondName}
+                    onChange={(e) => setSecondName(e.target.value)}
+                />
+                <textarea
+                    className='feedback-form-input'
+                    placeholder="Предложения или пожелания"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                />
+                <button
+                    className='feedback-form-input'
+                    type="submit"
+                    onClick={null}
+                    >
+                    Отправить</button>
+            </form>
+            {isSended && <div className='feedback-form-sended'>Сообщение доставлено</div>}
+
+        </div>
     );
 };
 

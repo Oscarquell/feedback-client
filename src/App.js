@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import TimerBlock from "./components/timerBlock/timer";
 import CircularIndeterminate from "./components/loader";
 import {useEffect, useState} from "react";
+import FeedbackForm from "./components/feedbackForm/feedback";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
                 <div>
                     <FirstSection />
                     <SecondSection />
+                    <FeedbackForm />
                     <TimerBlock />
                     <Footer />
                 </div>

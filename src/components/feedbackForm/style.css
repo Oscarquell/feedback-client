@@ -1,0 +1,32 @@
+.feedback-from-bg {
+    margin: 3em auto;
+}
+
+.feedback-form-title {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.feedback-form-description {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.feedback-form-input {
+    margin: 1em auto 0;
+    display: block;
+    height: 3em;
+    width: 100%;
+    font-size: 2em;
+    border-radius: 20px;
+    text-align: center;
+    background: wheat;
+}
+
+.feedback-form-sended {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}

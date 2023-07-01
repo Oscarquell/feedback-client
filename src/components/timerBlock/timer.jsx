@@ -82,7 +82,7 @@ const TimerBlock = () => {
             transition={{ ease: "easeInOut", duration: 1 }}
             className='feedback-section-bg'>
             <div className="feedback-section-title">
-                Осталось холостятской жизни
+                До мероприятия осталось:
             </div>
             <div className="feedback-section-timer-wrap">
                 <div className="feedback-section-timer-app">
