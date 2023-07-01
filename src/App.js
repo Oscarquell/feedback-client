@@ -2,13 +2,14 @@ import './App.css';
 import FirstSection from "./components/firstSection";
 import SecondSection from "./components/secondSection";
 import Footer from "./components/footer";
-import FeedbackForm from "./components/feedbackForm/feedback";
+import TimerBlock from "./components/timerBlock/timer";
 
 function App() {
   return (
     <div className="App">
         <FirstSection />
         <SecondSection />
+        <TimerBlock />
         <Footer />
     </div>
   );

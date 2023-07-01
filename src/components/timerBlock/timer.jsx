@@ -1,8 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
+import './style.css'
 
 const TimerBlock = () => {
 
-    const [time, setTime] = React.useState(null)
+    const [time, setTime] = React.useState({})
 
     function countdown(targetDate) {
         const currentDate = new Date();
@@ -10,7 +12,7 @@ const TimerBlock = () => {
         const timeDiff = targetDate.getTime() - currentDate.getTime();
 
         if (timeDiff <= 0) {
-            return 'Отсчет завершен';
+            return 'Мероприятие началось!';
         }
 
         const seconds = Math.floor(timeDiff / 1000) % 60;
@@ -19,28 +21,50 @@ const TimerBlock = () => {
         const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
         // Формируем строку обратного отсчета
-        let countdownString = '';
+        let countdownString = {};
 
         if (days > 0) {
-            countdownString += days + ' дней :';
-        }
-        if (hours > 0) {
-            countdownString += hours + ' часов : ';
-        }
-        if (minutes > 0) {
-            countdownString += minutes + ' м ';
-        }
-        if (seconds > 0) {
-            countdownString += seconds + ' с ';
+            countdownString = {d : days} ;
+        } else {
+            countdownString += {d : '0'} ;
         }
 
-        setTime(countdownString.trim())
 
-        return countdownString.trim();
+        if (hours >= 0 && hours < 10) {
+            countdownString = {...countdownString, h: '0' + hours} ;
+        } else if (hours > 10) {
+            countdownString = {...countdownString, h:hours} ;
+        } else {
+            countdownString = {...countdownString, h: '00'} ;
+        }
 
+
+        if (minutes >= 0 && minutes < 10) {
+            countdownString = {...countdownString, m: '0' + minutes} ;
+        } else if (minutes > 0 ) {
+            countdownString = {...countdownString, m: minutes} ;
+        } else {
+            countdownString = {...countdownString, m: '00'} ;
+        }
+
+
+        if (seconds > 0 && seconds < 10) {
+            countdownString = {...countdownString, s: '0' + seconds} ;
+        } else if (seconds > 10) {
+            countdownString = {...countdownString, s: seconds} ;
+        }
+        else {
+            countdownString = {...countdownString, s: '00'};
+        }
+
+
+
+        setTime(countdownString)
+        return countdownString;
     }
 
-    const targetDate = new Date(2023, 6, 20, 12, 16, 0);
+
+    const targetDate = new Date(2023, 6, 20, 14, 18, 0);
 
 
     React.useEffect(() => {
@@ -52,9 +76,33 @@ const TimerBlock = () => {
 
 
     return (
-        <div>
-            {time}
-        </div>
+        <motion.div
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{ ease: "easeInOut", duration: 1 }}
+            className='feedback-section-bg'>
+            <div className="feedback-section-title">
+                Осталось холостятской жизни
+            </div>
+            <div className="feedback-section-timer-wrap">
+                <div className="feedback-section-timer-app">
+                    <p className='feedback-section-timer'>{time.d} :</p>
+                    <p className='feedback-section-timer-description'>Дни</p>
+                </div>
+                <div className="feedback-section-timer-app">
+                    <p className='feedback-section-timer'> &nbsp;{time.h} :</p>
+                    <p className='feedback-section-timer-description'>Часы</p>
+                </div>
+                <div className="feedback-section-timer-app">
+                    <p className='feedback-section-timer'>&nbsp;{time.m} :</p>
+                    <p className='feedback-section-timer-description'>Мин</p>
+                </div>
+                <div className="feedback-section-timer-app">
+                    <p className='feedback-section-timer'>&nbsp;{time.s}</p>
+                    <p className='feedback-section-timer-description'>Сек</p>
+                </div>
+            </div>
+        </motion.div>
     );
 }
 

@@ -7,7 +7,7 @@ import './style.css'
 
 const SecondSection = () => {
     return (
-        <div>
+        <div className='second-section-bg'>
 
             <motion.div
                 initial={{opacity: 0}}
