@@ -108,7 +108,6 @@ const FeedbackForm = () => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 />
-                <p className='feedback-form-input-rules'>Необязательно к заполнению*</p>
                 <button
                     className='feedback-form-input'
                     type="submit"
