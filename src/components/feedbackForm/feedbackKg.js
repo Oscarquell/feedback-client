@@ -4,6 +4,7 @@ import './style.css'
 import LinearIndeterminate from "../loader/btnLoader";
 
 const FeedbackFormKg = () => {
+
     const [name, setName] = useState('');
     const [secondName, setSecondName] = useState('')
     const [message, setMessage] = useState('');
@@ -43,6 +44,7 @@ const FeedbackFormKg = () => {
             setRadio('');
             setInputValidation(false);
         } catch (error) {
+            console.log(error)
             setInputValidation(false);
             setErrorMessage(true)
             setIsDisable(false)
@@ -55,7 +57,7 @@ const FeedbackFormKg = () => {
             setInputValidation(false);
             setErrorMessage(false)
         }, 5000);
-    }, [isSended]);
+    }, [isSended, setInputValidation, setErrorMessage]);
 
 
     return (
