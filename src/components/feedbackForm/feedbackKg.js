@@ -82,7 +82,7 @@ const FeedbackFormKg = () => {
                         type="radio"
                         id='1'
                         name='radio'
-                        value='Обязательно приду'
+                        value='Мен сөзсүз келем'
                         onChange={(event) => {setRadio(event.target.value)}}
                     />
                     <label htmlFor="1">Мен сөзсүз келем</label>
@@ -93,7 +93,7 @@ const FeedbackFormKg = () => {
                         type="radio"
                         id='2'
                         name='radio'
-                        value='Не смогу прийти'
+                        value='Мен келе албайм'
                         onChange={(event) => {setRadio(event.target.value)}}
                     />
                     <label htmlFor="2">Мен келе албайм</label>
