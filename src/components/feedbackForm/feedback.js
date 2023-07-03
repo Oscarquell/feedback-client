@@ -44,6 +44,7 @@ const FeedbackForm = () => {
             setRadio('');
             setInputValidation(false);
         } catch (error) {
+            console.log(error)
             setInputValidation(false);
             setErrorMessage(true)
             setIsDisable(false)
