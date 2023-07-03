@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './style.css'
+import LinearIndeterminate from "../loader/btnLoader";
 
 const FeedbackForm = () => {
+
     const [name, setName] = useState('');
     const [secondName, setSecondName] = useState('')
     const [message, setMessage] = useState('');
@@ -10,20 +12,23 @@ const FeedbackForm = () => {
     const [isSended, SetIsSended] = useState(false)
     const [inputValidation, setInputValidation] = useState(false)
     const [isDisable, setIsDisable] = useState(false)
+    const [errorMessage, setErrorMessage] = useState(false)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        setIsDisable(true)
-        setTimeout(() => {
-            setIsDisable(false);
-        }, 4000);
-
-
         if (!name || !secondName || !radio) {
+            setErrorMessage(false)
+            SetIsSended(false);
             setInputValidation(true);
             return;
         }
+
+        setIsDisable(true)
+
+        setTimeout(() => {
+            setIsDisable(false);
+        }, 4000);
 
         try {
             await axios.post('/send-feedback', {
@@ -37,17 +42,21 @@ const FeedbackForm = () => {
             setSecondName('');
             setMessage('');
             setRadio('');
-            setInputValidation(false)
+            setInputValidation(false);
         } catch (error) {
-            alert('Ошибка при отправке сообщения', error)
+            setInputValidation(false);
+            setErrorMessage(true)
+            setIsDisable(false)
         }
     };
 
     useEffect(() => {
         setTimeout(() => {
             SetIsSended(false);
-        }, 3000);
-    }, [isSended]);
+            setInputValidation(false);
+            setErrorMessage(false)
+        }, 5000);
+    }, [isSended, setInputValidation, setErrorMessage]);
 
 
     return (
@@ -104,19 +113,24 @@ const FeedbackForm = () => {
 
                 <textarea
                     className='feedback-form-input custom-textarea'
-                    placeholder="Предложения, пожелания или просто Ваши мысли"
+                    placeholder="Предложения или пожелания"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 />
                 <button
                     className='feedback-form-input'
                     type="submit"
-                    disabled={isDisable}
-                    >
-                    Отправить</button>
+                    disabled={isDisable}>
+
+                    {
+                        isDisable ? <LinearIndeterminate /> : 'Отправить'
+                    }
+
+                </button>
             </form>
-            {isSended && <div className='feedback-form-sended'>Сообщение доставлено</div>}
+            {isSended && <div className='feedback-form-sended'>Сообщение доставлено!</div>}
             {inputValidation && <div className='feedback-form-validation'>Пожалуйста, заполните обязательные поля *</div>}
+            {errorMessage && <div className='feedback-form-validation'>Произошла ошибка при отправке сообщения...</div>}
 
         </div>
     );

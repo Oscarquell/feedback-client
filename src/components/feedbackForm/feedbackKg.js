@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './style.css'
+import LinearIndeterminate from "../loader/btnLoader";
 
 const FeedbackFormKg = () => {
     const [name, setName] = useState('');
@@ -10,20 +11,23 @@ const FeedbackFormKg = () => {
     const [isSended, SetIsSended] = useState(false)
     const [inputValidation, setInputValidation] = useState(false)
     const [isDisable, setIsDisable] = useState(false)
+    const [errorMessage, setErrorMessage] = useState(false)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        setIsDisable(true)
-        setTimeout(() => {
-            setIsDisable(false);
-        }, 4000);
-
-
         if (!name || !secondName || !radio) {
+            setErrorMessage(false)
+            SetIsSended(false);
             setInputValidation(true);
             return;
         }
+
+        setIsDisable(true)
+
+        setTimeout(() => {
+            setIsDisable(false);
+        }, 4000);
 
         try {
             await axios.post('/send-feedback', {
@@ -37,16 +41,20 @@ const FeedbackFormKg = () => {
             setSecondName('');
             setMessage('');
             setRadio('');
-            setInputValidation(false)
+            setInputValidation(false);
         } catch (error) {
-            alert('Ошибка при отправке сообщения', error)
+            setInputValidation(false);
+            setErrorMessage(true)
+            setIsDisable(false)
         }
     };
 
     useEffect(() => {
         setTimeout(() => {
             SetIsSended(false);
-        }, 3000);
+            setInputValidation(false);
+            setErrorMessage(false)
+        }, 5000);
     }, [isSended]);
 
 
@@ -111,12 +119,17 @@ const FeedbackFormKg = () => {
                 <button
                     className='feedback-form-input'
                     type="submit"
-                    disabled={isDisable}
-                >
-                    Жөнөтүү</button>
+                    disabled={isDisable}>
+
+                    {
+                        isDisable ? <LinearIndeterminate /> : 'Жөнөтүү'
+                    }
+
+                </button>
             </form>
             {isSended && <div className='feedback-form-sended'>Билдирүү жеткирилди</div>}
             {inputValidation && <div className='feedback-form-validation'>Сураныч, талап кылынган талааларды толтуруңуз *</div>}
+            {errorMessage && <div className='feedback-form-validation'>Билдирүү жөнөтүлүп жатканда ката кетти...</div>}
 
         </div>
     );
