@@ -8,17 +8,12 @@ function App() {
 
   return (
     <div className="App">
-
-
         <Switch>
-            <Redirect exact from="/" to="/language" />
             <Route exact path="/language" component={Language} />
             <Route exact path="/eventRU" component={MainPageRus} />
             <Route exact path="/eventKG" component={MainPageKgz} />
         </Switch>
-
-
-
+        <Redirect exact from="/" to="/language" />
     </div>
   );
 }

@@ -26,9 +26,6 @@ const FeedbackForm = () => {
 
         setIsDisable(true)
 
-        setTimeout(() => {
-            setIsDisable(false);
-        }, 4000);
 
         try {
             await axios.post('/send-feedback', {
@@ -38,6 +35,7 @@ const FeedbackForm = () => {
                 radio
             });
             SetIsSended(true)
+            setIsDisable(false)
             setName('');
             setSecondName('');
             setMessage('');
@@ -56,8 +54,8 @@ const FeedbackForm = () => {
             SetIsSended(false);
             setInputValidation(false);
             setErrorMessage(false)
-        }, 5000);
-    }, [isSended, setInputValidation, setErrorMessage]);
+        }, 3000);
+    }, [isSended, inputValidation, errorMessage])
 
 
     return (
