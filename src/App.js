@@ -1,36 +1,23 @@
+import {Redirect, Route, Switch} from "react-router-dom";
+import Language from "./components/pages/languageSelection";
+import MainPageRus from "./components/pages/mainPageRus";
+import MainPageKgz from "./components/pages/mainPageKgz";
 import './App.css';
-import FirstSection from "./components/firstSection";
-import SecondSection from "./components/secondSection";
-import Footer from "./components/footer";
-import TimerBlock from "./components/timerBlock/timer";
-import CircularIndeterminate from "./components/loader";
-import {useEffect, useState} from "react";
-import FeedbackForm from "./components/feedbackForm/feedback";
 
 function App() {
 
-    const [isLoading, setIsLoading] = useState(true)
-
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 1000);
-    }, []);
-
   return (
     <div className="App">
-        {
-            isLoading ?
-                <CircularIndeterminate />
-                :
-                <div>
-                    <FirstSection />
-                    <SecondSection />
-                    <FeedbackForm />
-                    <TimerBlock />
-                    <Footer />
-                </div>
-        }
+
+
+        <Switch>
+            <Redirect exact from="/" to="/language" />
+            <Route exact path="/language" component={Language} />
+            <Route exact path="/eventRU" component={MainPageRus} />
+            <Route exact path="/eventKG" component={MainPageKgz} />
+        </Switch>
+
+
 
     </div>
   );

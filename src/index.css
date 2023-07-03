@@ -22,3 +22,9 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
