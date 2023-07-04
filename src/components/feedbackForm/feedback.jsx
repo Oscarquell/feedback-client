@@ -96,6 +96,7 @@ const FeedbackForm = () => {
                         id='1'
                         name='radio'
                         value='Обязательно приду'
+                        checked={radio === 'Обязательно приду'}
                         onChange={(event) => {setRadio(event.target.value)}}
                     />
                     <label htmlFor="1">Обязательно приду</label>
@@ -107,6 +108,7 @@ const FeedbackForm = () => {
                         id='2'
                         name='radio'
                         value='Не смогу прийти'
+                        checked={radio === 'Не могу прийти'}
                         onChange={(event) => {setRadio(event.target.value)}}
                     />
                     <label htmlFor="2">Не смогу прийти</label>
