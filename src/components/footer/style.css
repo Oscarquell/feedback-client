@@ -6,10 +6,10 @@
 }
 
 .footer-address {
-    font-family: 'Marck Script', cursive;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     color: black;
-    font-size: 1.5em;
+    font-size: 1em;
     width: 90%;
     margin: 0 auto 2vh;
 }
@@ -29,7 +29,7 @@
 .footer-title {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 1.5em;
     margin: 1em;
 }
