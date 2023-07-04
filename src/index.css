@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display&display=swap");
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+
 
 body {
   margin: 0;
@@ -9,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to bottom, #696969, #808080, #A9A9A9, #C0C0C0, #D3D3D3);
+  background-image: linear-gradient(to bottom, #696969, #808080, #A9A9A9);
   box-shadow: 0 0 20px 10px #262626 inset;
 }
 

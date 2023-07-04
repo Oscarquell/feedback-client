@@ -4,6 +4,9 @@
 }
 
 .feedback-section-title {
+    font-family: 'Playfair Display', serif;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     color: white;
     font-size: 2em;
@@ -19,6 +22,9 @@
 .feedback-section-timer-app {
     text-align: center;
     color: white;
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Playfair Display', serif;
 }
 
 .feedback-section-timer {
