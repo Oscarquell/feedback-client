@@ -9,6 +9,14 @@ const Footer = () => {
                 проезд до ресторана
                 <a target="_blank" href="https://go.2gis.com/uzipr">2GIS</a>
             </div>
+            <div>
+                проезд до ресторана
+                <a target="_blank" href="https://goo.gl/maps/cvaGhSYcN7sXZu178">Google Maps</a>
+            </div>
+
+            <div>
+                <a href="yandextaxi://route?source=app_search&dest=улица+Токтоболота+Абдумомунова,+дом+220А,+город+Бишкек">Заказать такси</a>
+            </div>
 
             <div className="footer-title">
                 Если у Вас возникнут вопросы, можете связаться с нами
@@ -29,3 +37,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
