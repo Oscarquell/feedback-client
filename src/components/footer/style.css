@@ -2,7 +2,16 @@
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     width: 100%;
     height: auto;
-    padding: 5vh 0;
+    padding: 2vh 0 5vh;
+}
+
+.footer-address {
+    font-family: 'Marck Script', cursive;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto 2vh;
 }
 
 .footer-maps {

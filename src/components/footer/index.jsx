@@ -5,6 +5,13 @@ const Footer = () => {
     return (
         <div className='footer'>
 
+            <div className="footer-address">
+                "С нетерпением ждем встречи в этот волшебный день, чтобы создать воспоминания, которые будут с нами всю жизнь!
+            </div>
+            <div className="footer-address">
+                Ожидаем вашего присутствия в уютном и изысканном ресторане "Фрунзе" по адресу: ул. Абдумомунова, 220а."
+            </div>
+
             <div className='footer-maps'>
                 <a className='footer-maps-description' target="_blank" href="https://go.2gis.com/uzipr">Найти по карте 2GIS</a>
                 <i className="footer-maps-icon two-gis"></i>
