@@ -91,6 +91,7 @@ const FeedbackFormKg = () => {
                         id='1'
                         name='radio'
                         value='Мен сөзсүз келем'
+                        checked={radio === 'Мен сөзсүз келем'}
                         onChange={(event) => {setRadio(event.target.value)}}
                     />
                     <label htmlFor="1">Мен сөзсүз келем</label>
@@ -102,6 +103,7 @@ const FeedbackFormKg = () => {
                         id='2'
                         name='radio'
                         value='Мен келе албайм'
+                        checked={radio === 'Мен келе албайм'}
                         onChange={(event) => {setRadio(event.target.value)}}
                     />
                     <label htmlFor="2">Мен келе албайм</label>

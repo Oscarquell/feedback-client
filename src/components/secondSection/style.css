@@ -17,3 +17,16 @@
     height: auto;
     border-radius: 10px;
 }
+
+.second-section-invite {
+    color: white;
+    font-size: 1.5em;
+    padding: 2vh;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    text-shadow: 1vh 1vw 1vw gray, 1vh 1vh 1vw gray;
+}
+
+.second-section-invite-title {
+    font-size: 2em;
+}

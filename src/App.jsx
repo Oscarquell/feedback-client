@@ -1,4 +1,4 @@
-import {Redirect, Route, Switch} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import Language from "./components/pages/languageSelection";
 import MainPageRus from "./components/pages/mainPageRus";
 import MainPageKgz from "./components/pages/mainPageKgz";

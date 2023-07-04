@@ -23,7 +23,6 @@ const FeedbackForm = () => {
             setInputValidation(true);
             return;
         }
-
         setIsDisable(true)
 
 
@@ -87,8 +86,6 @@ const FeedbackForm = () => {
                     value={secondName}
                     onChange={(e) => setSecondName(e.target.value)}
                 />
-                {/*<p className='feedback-form-input-rules'>Обязательно к заполнению*</p>*/}
-
 
                 <div className='feedback-form-input-radio'>
                     <input
@@ -108,14 +105,11 @@ const FeedbackForm = () => {
                         id='2'
                         name='radio'
                         value='Не смогу прийти'
-                        checked={radio === 'Не могу прийти'}
+                        checked={radio === 'Не смогу прийти'}
                         onChange={(event) => {setRadio(event.target.value)}}
                     />
                     <label htmlFor="2">Не смогу прийти</label>
                 </div>
-                {/*<p className='feedback-form-input-rules'>Обязательно к заполнению*</p>*/}
-
-
 
                 <textarea
                     className='feedback-form-input custom-textarea'
@@ -127,13 +121,12 @@ const FeedbackForm = () => {
                     className='feedback-form-input'
                     type="submit"
                     disabled={isDisable}>
-
                     {
                         isDisable ? <LinearIndeterminate /> : 'Отправить'
                     }
-
                 </button>
             </form>
+
             {isSended && <div className='feedback-form-sended'>Сообщение доставлено!</div>}
             {inputValidation && <div className='feedback-form-validation'>Пожалуйста, заполните форму обратной связи</div>}
             {errorMessage && <div className='feedback-form-validation'>Произошла ошибка при отправке сообщения...</div>}

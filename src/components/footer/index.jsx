@@ -4,6 +4,12 @@ import './style.css'
 const Footer = () => {
     return (
         <div className='footer'>
+
+            <div>
+                проезд до ресторана
+                <a target="_blank" href="https://go.2gis.com/uzipr">2GIS</a>
+            </div>
+
             <div className="footer-title">
                 Если у Вас возникнут вопросы, можете связаться с нами
             </div>
