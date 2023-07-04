@@ -15,7 +15,7 @@ const Footer = () => {
             {/*</div>*/}
 
             <div>
-                <a href="https://taxi.yandex.ru/ul?from=&to=%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A2%D0%BE%D0%BA%D1%82%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D1%82%D0%B0%20%D0%90%D0%B1%D0%B4%D1%83%D0%BC%D0%BE%D0%BC%D1%83%D0%BD%D0%BE%D0%B2%D0%B0%20%D0%B4%D0%BE%D0%BC%20220%D0%90">Заказать такси</a>
+                <a href="https://3.redirect.appmetrica.yandex.com/route?start-lat=55.73400123907955&start-lon=37.588533418821726&end-lat=55.76776211471192&end-lon=37.60714921124336&level=50&ref=yoursiteru&appmetrica_tracking_id=1178268795219780156">Заказать такси</a>
             </div>
 
             <div className="footer-title">
