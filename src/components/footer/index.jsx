@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
 
             <div>
-                <a href="yandextaxi://route?source=app_search&dest=улица+Токтоболота+Абдумомунова,+дом+220А,+город+Бишкек">Заказать такси</a>
+                <a href="yandextaxi://route?source=app_search&dest=улица+Токтоболота+Абдумомунова,+дом+220А">Заказать такси</a>
             </div>
 
             <div className="footer-title">
