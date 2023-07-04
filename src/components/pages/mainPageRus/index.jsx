@@ -14,26 +14,27 @@ const MainPageRus = () => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false);
-        }, 1000);
+        }, 3000);
     }, []);
 
 
     return (
-        <div>
-            {
-                isLoading ?
-                    <CircularIndeterminate />
-                    :
-                    <div>
-                        <FirstSection />
-                        <SecondSection />
-                        <FeedbackForm />
-                        <TimerBlock />
-                        <Footer />
-                    </div>
-            }
-        </div>
+            <div>
+                {
+                    isLoading ?
+                        <CircularIndeterminate />
+                        :
+                        <div>
+                            <FirstSection />
+                            <SecondSection />
+                            <FeedbackForm />
+                            <TimerBlock />
+                            <Footer />
+                        </div>
+                }
+            </div>
     );
 };
 
 export default MainPageRus;
+

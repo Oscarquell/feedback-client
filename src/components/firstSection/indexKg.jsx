@@ -1,5 +1,7 @@
 import React from 'react';
-import Photo from '../../media/img/first-section.jpg'
+import Photo2 from '../../media/img/2.jpg'
+import Photo3 from '../../media/img/3.jpg'
+import Photo4 from '../../media/img/4.jpg'
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import './style.css'
@@ -48,15 +50,16 @@ const FirstSectionKg = () => {
             <div className="first-section-photo-block">
                 <Slider {...settings}>
                     <div>
-                        <img className='first-section-photo' src={Photo} alt=""/>
+                        <img className='first-section-photo' src={Photo2} alt=""/>
                     </div>
                     <div>
-                        <img className='first-section-photo' src={Photo} alt=""/>
+                        <img className='first-section-photo' src={Photo3} alt=""/>
                     </div>
                     <div>
-                        <img className='first-section-photo' src={Photo} alt=""/>
+                        <img className='first-section-photo' src={Photo4} alt=""/>
                     </div>
                 </Slider>
+
 
             </div>
 

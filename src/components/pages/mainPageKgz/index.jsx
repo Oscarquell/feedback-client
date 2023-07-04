@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import CircularIndeterminate from "../../loader";
 import FirstSectionKg from "../../firstSection/indexKg";
-import SecondSection from "../../secondSection";
 import FeedbackFormKg from "../../feedbackForm/feedbackKg";
 import TimerBlockKg from "../../timerBlock/timerKg";
 import FooterKg from "../../footer/indexKg";
+import SecondSectionKg from "../../secondSection/indexKg";
 
 
 const MainPageKgz = () => {
@@ -14,7 +14,7 @@ const MainPageKgz = () => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false);
-        }, 1000);
+        }, 3000);
     }, []);
 
 
@@ -26,7 +26,7 @@ const MainPageKgz = () => {
                     :
                     <div>
                         <FirstSectionKg />
-                        <SecondSection />
+                        <SecondSectionKg />
                         <FeedbackFormKg />
                         <TimerBlockKg />
                         <FooterKg />

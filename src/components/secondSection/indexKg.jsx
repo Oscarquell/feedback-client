@@ -4,7 +4,7 @@ import Photo1 from '../../media/img/1.jpg'
 import Photo5 from '../../media/img/5.jpg'
 import './style.css'
 
-const SecondSection = () => {
+const SecondSectionKg = () => {
     return (
         <div className='second-section-bg'>
 
@@ -17,10 +17,10 @@ const SecondSection = () => {
             </motion.div>
 
             <div className="second-section-invite">
-                <p className='second-section-invite-title'> Дорогие друзья!</p>
-                <p>Счастливы и радостно приглашаем вас на нашу свадьбу! Мы с нетерпением ждем, чтобы разделить этот особый день с вами. Пожалуйста, присоединитесь к нам 20 июля в ресторане "Фрунзе" и помогите нам создать незабываемые воспоминания, наполненные любовью и счастьем.</p>
-                <p>С любовью,</p>
-                <p>Арген и Адинай!</p>
+                <p className='second-section-invite-title'> Көркөмдүү достор!</p>
+                <p>Биздин бала тууганыгымызга кантип сырлайбыз! Биз сиз менен бул жашылча күндү бөлүшүңүздү күтөтөбүз. 20 июльда "Фрунзе" ресторанында бизге катышып, бизге сүйлөнүп калган, сырткы күндү калган эч кандай эскертүүлүктөрдү жасайып, мухтаж болубуз.</p>
+                <p>Сүйүктүү менен,</p>
+                <p>Арген жана Адинай!</p>
             </div>
 
             <motion.div
@@ -36,4 +36,4 @@ const SecondSection = () => {
     );
 };
 
-export default SecondSection;
+export default SecondSectionKg;

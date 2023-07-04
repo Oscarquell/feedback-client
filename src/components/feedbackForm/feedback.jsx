@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './style.css'
 import LinearIndeterminate from "../loader/btnLoader";
+import { motion } from 'framer-motion'
 
 const FeedbackForm = () => {
 
@@ -63,7 +64,11 @@ const FeedbackForm = () => {
 
 
     return (
-        <div className='feedback-from-bg'>
+        <motion.div
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{ ease: "easeInOut", duration: 1 }}
+            className='feedback-from-bg'>
 
             <h2 className='feedback-form-title'>АНКЕТА ГОСТЯ</h2>
             <p className="feedback-form-description">
@@ -78,7 +83,6 @@ const FeedbackForm = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
-                {/*<p className='feedback-form-input-rules'>Обязательно к заполнению*</p>*/}
                 <input
                     className='feedback-form-input'
                     type="text"
@@ -131,7 +135,7 @@ const FeedbackForm = () => {
             {inputValidation && <div className='feedback-form-validation'>Пожалуйста, заполните форму обратной связи</div>}
             {errorMessage && <div className='feedback-form-validation'>Произошла ошибка при отправке сообщения...</div>}
 
-        </div>
+        </motion.div>
     );
 };
 

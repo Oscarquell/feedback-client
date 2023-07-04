@@ -14,6 +14,7 @@
 .footer-maps-description {
     color: black;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .footer-title {
@@ -62,6 +63,7 @@
 .footer-maps-icon {
     width: 2em;
     height: 2em;
+    margin-left: 1vh;
 }
 
 .two-gis {
