@@ -2,7 +2,18 @@
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     width: 100%;
     height: auto;
-    padding-bottom: 5vh;
+    padding: 5vh 0;
+}
+
+.footer-maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-maps-description {
+    color: black;
+    font-weight: bold;
 }
 
 .footer-title {
@@ -46,4 +57,24 @@
 .telegram {
     display: block;
     background: url("../../../src/media/icons/telegram.png") center center/cover no-repeat;
+}
+
+.footer-maps-icon {
+    width: 2em;
+    height: 2em;
+}
+
+.two-gis {
+    display: block;
+    background: url("../../../src/media/icons/2gis.png") center center/contain no-repeat;
+}
+
+.google-maps {
+    display: block;
+    background: url("../../../src/media/icons/googlemap.png") center center/contain no-repeat;
+}
+
+.yandex-taxi {
+    display: block;
+    background: url("../../../src/media/icons/yandex.png") center center/contain no-repeat;
 }

@@ -5,18 +5,21 @@ const Footer = () => {
     return (
         <div className='footer'>
 
-            {/*<div>*/}
-            {/*    проезд до ресторана*/}
-            {/*    <a target="_blank" href="https://go.2gis.com/uzipr">2GIS</a>*/}
-            {/*</div>*/}
-            {/*<div>*/}
-            {/*    проезд до ресторана*/}
-            {/*    <a target="_blank" href="https://goo.gl/maps/cvaGhSYcN7sXZu178">Google Maps</a>*/}
-            {/*</div>*/}
-
-            <div>
-                <a href="https://3.redirect.appmetrica.yandex.com/route?end-lat=42.878968&end-lon=74.606929&level=50&ref=yoursiteru&appmetrica_tracking_id=1178268795219780156">Заказать такси</a>
+            <div className='footer-maps'>
+                <a className='footer-maps-description' target="_blank" href="https://go.2gis.com/uzipr">Найти по карте 2GIS</a>
+                <i className="footer-maps-icon two-gis"></i>
             </div>
+
+            <div className='footer-maps'>
+                <a className='footer-maps-description' target="_blank" href="https://goo.gl/maps/cvaGhSYcN7sXZu178">Найти по Google Maps</a>
+                <i className="footer-maps-icon google-maps"></i>
+            </div>
+
+            <div className='footer-maps'>
+                <a className='footer-maps-description' href="https://3.redirect.appmetrica.yandex.com/route?end-lat=42.878968&end-lon=74.606929&level=50&ref=yoursiteru&appmetrica_tracking_id=1178268795219780156">Заказать Яндекс такси</a>
+                <i className="footer-maps-icon yandex-taxi"></i>
+            </div>
+
 
             <div className="footer-title">
                 Если у Вас возникнут вопросы, можете связаться с нами
