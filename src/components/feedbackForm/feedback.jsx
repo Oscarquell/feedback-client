@@ -34,6 +34,7 @@ const FeedbackForm = () => {
                 message,
                 radio
             });
+
             SetIsSended(true)
             setIsDisable(false)
             setName('');
@@ -41,8 +42,8 @@ const FeedbackForm = () => {
             setMessage('');
             setRadio('');
             setInputValidation(false);
+
         } catch (error) {
-            console.log(error)
             setInputValidation(false);
             setErrorMessage(true)
             setIsDisable(false)
@@ -50,12 +51,16 @@ const FeedbackForm = () => {
     };
 
     useEffect(() => {
-        setTimeout(() => {
+        const timeout = setTimeout(() => {
             SetIsSended(false);
             setInputValidation(false);
             setErrorMessage(false)
         }, 3000);
-    }, [isSended, inputValidation, errorMessage])
+
+        return () => {
+            clearTimeout(timeout);
+        };
+    }, [isSended, inputValidation, errorMessage]);
 
 
     return (
@@ -74,7 +79,7 @@ const FeedbackForm = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
-                <p className='feedback-form-input-rules'>Обязательно к заполнению*</p>
+                {/*<p className='feedback-form-input-rules'>Обязательно к заполнению*</p>*/}
                 <input
                     className='feedback-form-input'
                     type="text"
@@ -82,7 +87,7 @@ const FeedbackForm = () => {
                     value={secondName}
                     onChange={(e) => setSecondName(e.target.value)}
                 />
-                <p className='feedback-form-input-rules'>Обязательно к заполнению*</p>
+                {/*<p className='feedback-form-input-rules'>Обязательно к заполнению*</p>*/}
 
 
                 <div className='feedback-form-input-radio'>
@@ -106,7 +111,7 @@ const FeedbackForm = () => {
                     />
                     <label htmlFor="2">Не смогу прийти</label>
                 </div>
-                <p className='feedback-form-input-rules'>Обязательно к заполнению*</p>
+                {/*<p className='feedback-form-input-rules'>Обязательно к заполнению*</p>*/}
 
 
 
@@ -128,7 +133,7 @@ const FeedbackForm = () => {
                 </button>
             </form>
             {isSended && <div className='feedback-form-sended'>Сообщение доставлено!</div>}
-            {inputValidation && <div className='feedback-form-validation'>Пожалуйста, заполните обязательные поля *</div>}
+            {inputValidation && <div className='feedback-form-validation'>Пожалуйста, заполните форму обратной связи</div>}
             {errorMessage && <div className='feedback-form-validation'>Произошла ошибка при отправке сообщения...</div>}
 
         </div>
