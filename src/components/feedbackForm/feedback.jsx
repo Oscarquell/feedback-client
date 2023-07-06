@@ -5,16 +5,16 @@ import {Radio,TextField} from "@mui/material";
 import Box from "@mui/material/Box";
 import LoadingButton from "@mui/lab/LoadingButton";
 import SendIcon from "@mui/icons-material/Send";
-import './style.css'
 import Underline from "../../media/img/razdelitel.png";
 import Bouquet4 from "../../media/img/buket4.png";
+import './style.css'
 
 const FeedbackForm = () => {
 
     const [name, setName] = useState('');
     const [secondName, setSecondName] = useState('')
     const [message, setMessage] = useState('');
-    const [radio, setRadio] = useState('')
+    const [presence, setPresence] = useState('')
     const [isSended, SetIsSended] = useState(false)
     const [inputValidation, setInputValidation] = useState(false)
     const [isDisable, setIsDisable] = useState(false)
@@ -22,19 +22,34 @@ const FeedbackForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!name || !secondName || !radio) {
+        if (!name || !secondName || !presence) {
             setErrorMessage(false)
             SetIsSended(false);
             setInputValidation(true);
             return;
         }
         setIsDisable(true)
+
+        await fetch('https://dry-wildwood-30712-9e60cd0a45ba.herokuapp.com/send', {
+            method: 'POST',
+            // mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                secondName: secondName,
+                presence: presence,
+                message: message
+            })
+        });
+
         try {
             await axios.post('/send-feedback', {
                 name,
                 secondName,
+                presence,
                 message,
-                radio
             });
 
             SetIsSended(true)
@@ -42,7 +57,7 @@ const FeedbackForm = () => {
             setName('');
             setSecondName('');
             setMessage('');
-            setRadio('');
+            setPresence('');
             setInputValidation(false);
 
         } catch (error) {
@@ -121,21 +136,21 @@ const FeedbackForm = () => {
                 <div className='feedback-form-input-radio'>
                     <Radio
                         sx={radioSettings}
-                        checked={radio === 'Обязательно буду!'}
-                        onChange={(event) => {setRadio(event.target.value)}}
-                        value="Обязательно буду!"
+                        checked={presence === 'Обязательно буду'}
+                        onChange={(event) => {setPresence(event.target.value)}}
+                        value="Обязательно буду"
                         name="radio-buttons"
                         inputProps={{ 'aria-label': 'A' }}
                         id='1'
                     />
-                    <label htmlFor="1">Обязательно буду!</label>
+                    <label htmlFor="1">Обязательно буду</label>
                 </div>
 
                 <div className='feedback-form-input-radio'>
                     <Radio
                         sx={radioSettings}
-                        checked={radio === 'К сожалению, не приду'}
-                        onChange={(event) => {setRadio(event.target.value)}}
+                        checked={presence === 'К сожалению, не приду'}
+                        onChange={(event) => {setPresence(event.target.value)}}
                         value="К сожалению, не приду"
                         name="radio-buttons"
                         inputProps={{ 'aria-label': 'B' }}
