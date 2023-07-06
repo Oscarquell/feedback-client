@@ -1,8 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import './style.css'
-import LinearIndeterminate from "../loader/btnLoader";
 import { motion } from 'framer-motion'
+import {Radio,TextField} from "@mui/material";
+import Box from "@mui/material/Box";
+import LoadingButton from "@mui/lab/LoadingButton";
+import SendIcon from "@mui/icons-material/Send";
+import './style.css'
 
 const FeedbackForm = () => {
 
@@ -17,7 +20,6 @@ const FeedbackForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         if (!name || !secondName || !radio) {
             setErrorMessage(false)
             SetIsSended(false);
@@ -25,8 +27,6 @@ const FeedbackForm = () => {
             return;
         }
         setIsDisable(true)
-
-
         try {
             await axios.post('/send-feedback', {
                 name,
@@ -62,6 +62,28 @@ const FeedbackForm = () => {
         };
     }, [isSended, inputValidation, errorMessage]);
 
+    const inputSettings = {
+        maxWidth: '90%',
+        margin: '0 auto',
+        display: 'block',
+        fontSize: '1.5em',
+        marginTop: '0.5em',
+    }
+
+    const radioSettings = {
+        marginTop: '0.2em',
+        fontSize: '1.5em',
+        margin: '0 auto'
+    }
+
+    const buttonSettings = {
+        width: '90%',
+        margin: '0 auto',
+        color: 'black',
+        border: '1px solid black',
+        fontSize: '1em'
+    }
+
 
     return (
         <motion.div
@@ -76,59 +98,69 @@ const FeedbackForm = () => {
             </p>
 
             <form onSubmit={handleSubmit}>
-                <input
-                    className='feedback-form-input'
-                    type="text"
-                    placeholder="Введите имя"
-                    value={name}
+                <TextField
+                    sx={inputSettings}
+                    fullWidth label="Ваше имя"
+                    id="fullWidth"
                     onChange={(e) => setName(e.target.value)}
                 />
-                <input
-                    className='feedback-form-input'
-                    type="text"
-                    placeholder="Введите фамилию"
-                    value={secondName}
+
+                <TextField
+                    sx={inputSettings}
+                    fullWidth label="Ваша фамилия"
+                    id="fullWidth"
                     onChange={(e) => setSecondName(e.target.value)}
                 />
 
                 <div className='feedback-form-input-radio'>
-                    <input
-                        type="radio"
-                        id='1'
-                        name='radio'
-                        value='Обязательно приду'
+                    <Radio
+                        sx={radioSettings}
                         checked={radio === 'Обязательно приду'}
                         onChange={(event) => {setRadio(event.target.value)}}
+                        value="Обязательно приду"
+                        name="radio-buttons"
+                        inputProps={{ 'aria-label': 'A' }}
+                        id='1'
                     />
                     <label htmlFor="1">Обязательно приду</label>
                 </div>
 
                 <div className='feedback-form-input-radio'>
-                    <input
-                        type="radio"
-                        id='2'
-                        name='radio'
-                        value='Не смогу прийти'
+                    <Radio
+                        sx={radioSettings}
                         checked={radio === 'Не смогу прийти'}
                         onChange={(event) => {setRadio(event.target.value)}}
+                        value="Не смогу прийти"
+                        name="radio-buttons"
+                        inputProps={{ 'aria-label': 'B' }}
+                        id='2'
                     />
                     <label htmlFor="2">Не смогу прийти</label>
                 </div>
 
-                <textarea
-                    className='feedback-form-input custom-textarea'
-                    placeholder="Предложения или пожелания"
-                    value={message}
+                <TextField
+                    sx={inputSettings}
+                    fullWidth label="Предложения или пожелания"
+                    id="fullWidth"
                     onChange={(e) => setMessage(e.target.value)}
                 />
-                <button
-                    className='feedback-form-input'
-                    type="submit"
-                    disabled={isDisable}>
-                    {
-                        isDisable ? <LinearIndeterminate /> : 'Отправить'
-                    }
-                </button>
+
+                <div className='feedback-form-send-input' >
+                    <Box >
+                        <LoadingButton
+                            sx={buttonSettings}
+                            onClick={handleSubmit}
+                            endIcon={<SendIcon />}
+                            loading={isDisable}
+                            loadingPosition="end"
+                            variant="outlined"
+                        >
+                            <span>Отправить</span>
+                        </LoadingButton>
+                    </Box>
+                </div>
+
+
             </form>
 
             {isSended && <div className='feedback-form-sended'>Сообщение доставлено!</div>}
@@ -140,3 +172,39 @@ const FeedbackForm = () => {
 };
 
 export default FeedbackForm;
+
+
+// <div className='feedback-form-input-radio'>
+//     <input
+//         type="radio"
+//         id='1'
+//         name='radio'
+//         value='Обязательно приду'
+//         checked={radio === 'Обязательно приду'}
+//         onChange={(event) => {setRadio(event.target.value)}}
+//     />
+//     <label htmlFor="1">Обязательно приду</label>
+// </div>
+//
+// <div className='feedback-form-input-radio'>
+//     <input
+//         type="radio"
+//         id='2'
+//         name='radio'
+//         value='Не смогу прийти'
+//         checked={radio === 'Не смогу прийти'}
+//         onChange={(event) => {setRadio(event.target.value)}}
+//     />
+//     <label htmlFor="2">Не смогу прийти</label>
+// </div>
+
+
+
+// <button
+//     className='feedback-form-input'
+//     type="submit"
+//     disabled={isDisable}>
+//     {
+//         isDisable ? <LinearIndeterminate /> : 'Отправить'
+//     }
+// </button>

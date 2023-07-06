@@ -1,16 +1,16 @@
 .feedback-section-bg {
     /*border-bottom: 1px solid rgba(0, 0, 0, 0.3);*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding-bottom: 2vh;
 }
 
 .feedback-section-title {
     font-family: 'Playfair Display', serif;
     width: 90%;
-    margin: 0 auto;
     text-align: center;
     color: white;
     font-size: 2em;
-    margin-bottom: 1em;
+    margin: 2vh auto 0;
 }
 
 .feedback-section-timer-wrap {
@@ -28,23 +28,23 @@
 }
 
 .feedback-section-timer {
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 .feedback-section-timer-description {
     text-align: center;
 }
 
-@media (max-width: 320px) {
-    .feedback-section-title {
-        text-align: center;
-        color: white;
-        font-size: 1.5em;
-    }
-    .feedback-section-timer {
-        font-size: 1.5em;
-    }
-    .feedback-section-timer-description {
-        font-size: 0.7em;
-    }
-}
+/*@media (max-width: 320px) {*/
+/*    .feedback-section-title {*/
+/*        text-align: center;*/
+/*        color: white;*/
+/*        font-size: 1.5em;*/
+/*    }*/
+/*    .feedback-section-timer {*/
+/*        font-size: 1.5em;*/
+/*    }*/
+/*    .feedback-section-timer-description {*/
+/*        font-size: 0.7em;*/
+/*    }*/
+/*}*/
