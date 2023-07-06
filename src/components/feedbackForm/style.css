@@ -1,6 +1,5 @@
 .feedback-from-bg {
-    padding: 2vh 0;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    /*border-bottom: 5px solid rgba(0, 0, 0, 0.3);*/
 }
 
 .feedback-form-title {
@@ -17,7 +16,7 @@
     color: white;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 90%;
 }
 
@@ -48,11 +47,10 @@
 
 .feedback-form-input-radio {
     max-width: 90%;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0 auto;
-    /*border: 1px solid black;*/
-
-    font-family: 'Playfair Display', serif;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
 }
 
 .feedback-form-sended {
@@ -76,4 +74,18 @@
 .feedback-form-send-input {
     text-align: center;
     margin-top: 0.5em;
+}
+
+.feedback-section-bouquet {
+    margin: 0 auto;
+    width: 90%;
+    height: 7em;
+    /*border: 1px solid black;*/
+    background: url("../../../src/media/img/buket.png") center center/contain no-repeat;
+    color: white;
+    font-size: 1.5em;
+    padding: 2vh;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    text-shadow: 1vh 1vw 1vw gray, 1vh 1vh 1vw gray;
 }

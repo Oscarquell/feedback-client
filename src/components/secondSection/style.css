@@ -1,10 +1,9 @@
 .second-section-bg {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    padding-bottom: 2vh;
+
 }
 
 .second-section-photos {
-    padding: 2vh 5vh 0;
+    padding: 0 5vh 0;
     overflow: hidden;
     text-align: center;
     width: 100%;
@@ -15,7 +14,7 @@
 .second-section-photo {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 
 .second-section-invite {
@@ -27,6 +26,24 @@
     text-shadow: 1vh 1vw 1vw gray, 1vh 1vh 1vw gray;
 }
 
+.second-section-bouquet {
+    margin: 0 auto;
+    width: 90%;
+    height: 7em;
+    /*border: 1px solid black;*/
+    background: url("../../../src/media/img/buket.png") center center/contain no-repeat;
+}
+
 .second-section-invite-title {
     font-size: 2em;
+}
+
+.underline {
+    width: 100%;
+    height: max-content;
+}
+
+.underline-img {
+    max-width: 100%;
+    height: auto;
 }

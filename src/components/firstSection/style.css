@@ -1,57 +1,42 @@
 .first-section-bg {
-    /*background-image: linear-gradient(to bottom, #000000, #1c1c1c, #2b2b2b, #3b3b3b, #4d4d4d);*/
-    /*box-shadow: 0 0 20px 10px #262626 inset;*/
-
-    /*border-bottom: 1px solid rgba(0, 0, 0, 0.3);*/
+    width: 90%;
+    margin: 2vh auto 0;
 }
 
-.first-section-img {
-    /*background: black;*/
-    /*background-color: rgba(0, 0, 0, 0.2);*/
-    padding-top: 1vh;
-    height: 9vh;
-    width: 100%;
-    text-align: center;
+.first-section-maps-wrap {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.first-section-description {
-    font-family: 'Marck Script', cursive;
-    color: white;
-    font-size: 2em;
-    padding: 0 1vh;
+.first-section-maps {
+    width: 2em;
+    height: 2em;
 }
 
-.first-section-photo-block {
-    padding: 0 5vh;
-    overflow: hidden;
-    text-align: center;
-    width: 100%;
+.two-gis {
+    display: block;
+    background: url("../../../src/media/icons/2gis.png") center center/cover no-repeat;
+}
+
+.google-maps {
+    display: block;
+    background: url("../../../src/media/icons/googlemap.png") center center/contain no-repeat;
+}
+
+.yandex-taxi {
+    display: block;
+    background: url("../../../src/media/icons/yandex.png") center center/contain no-repeat;
+}
+
+.bouquet-decoration {
+    width: 90%;
     height: max-content;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
-.first-section-photo {
+.bouquet {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
-}
-
-.first-section-quote {
-    color: white;
-    font-size: 1.5em;
-    padding: 2vh;
-    text-align: center;
-    font-family: 'Marck Script', cursive;
-    text-shadow: 1vh 1vw 1vw gray, 1vh 1vh 1vw gray;
-}
-
-.first-section-quote-author {
-    color: white;
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 2vh;
-    font-family: 'Marck Script', cursive;
-    text-shadow: 1vh 1vw 1vw gray, 1vh 1vh 1vw gray;
 }

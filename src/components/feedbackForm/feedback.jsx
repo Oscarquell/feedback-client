@@ -6,6 +6,8 @@ import Box from "@mui/material/Box";
 import LoadingButton from "@mui/lab/LoadingButton";
 import SendIcon from "@mui/icons-material/Send";
 import './style.css'
+import Underline from "../../media/img/razdelitel.png";
+import Bouquet4 from "../../media/img/buket4.png";
 
 const FeedbackForm = () => {
 
@@ -73,7 +75,9 @@ const FeedbackForm = () => {
     const radioSettings = {
         marginTop: '0.2em',
         fontSize: '1.5em',
-        margin: '0 auto'
+        margin: '0 auto',
+        fontFamilyamily: " Roboto,Helvetica,Arial,sans-serif ",
+        fontWeight: "400"
     }
 
     const buttonSettings = {
@@ -91,7 +95,9 @@ const FeedbackForm = () => {
             whileInView={{opacity: 1}}
             transition={{ ease: "easeInOut", duration: 1 }}
             className='feedback-from-bg'>
-
+            <div className="bouquet-decoration">
+                <img src={Bouquet4} alt="" className="bouquet"/>
+            </div>
             <h2 className='feedback-form-title'>АНКЕТА ГОСТЯ</h2>
             <p className="feedback-form-description">
                 Пожалуйста, подтвердите свое присутствие на торжестве до 20 июля
@@ -115,27 +121,27 @@ const FeedbackForm = () => {
                 <div className='feedback-form-input-radio'>
                     <Radio
                         sx={radioSettings}
-                        checked={radio === 'Обязательно приду'}
+                        checked={radio === 'Обязательно буду!'}
                         onChange={(event) => {setRadio(event.target.value)}}
-                        value="Обязательно приду"
+                        value="Обязательно буду!"
                         name="radio-buttons"
                         inputProps={{ 'aria-label': 'A' }}
                         id='1'
                     />
-                    <label htmlFor="1">Обязательно приду</label>
+                    <label htmlFor="1">Обязательно буду!</label>
                 </div>
 
                 <div className='feedback-form-input-radio'>
                     <Radio
                         sx={radioSettings}
-                        checked={radio === 'Не смогу прийти'}
+                        checked={radio === 'К сожалению, не приду'}
                         onChange={(event) => {setRadio(event.target.value)}}
-                        value="Не смогу прийти"
+                        value="К сожалению, не приду"
                         name="radio-buttons"
                         inputProps={{ 'aria-label': 'B' }}
                         id='2'
                     />
-                    <label htmlFor="2">Не смогу прийти</label>
+                    <label htmlFor="2">К сожалению, не приду</label>
                 </div>
 
                 <TextField
@@ -167,6 +173,10 @@ const FeedbackForm = () => {
             {inputValidation && <div className='feedback-form-validation'>Пожалуйста, заполните форму обратной связи</div>}
             {errorMessage && <div className='feedback-form-validation'>Произошла ошибка при отправке сообщения...</div>}
 
+            <div className="underline">
+                <img src={Underline} alt="" className="underline-img"/>
+            </div>
+
         </motion.div>
     );
 };
@@ -174,37 +184,3 @@ const FeedbackForm = () => {
 export default FeedbackForm;
 
 
-// <div className='feedback-form-input-radio'>
-//     <input
-//         type="radio"
-//         id='1'
-//         name='radio'
-//         value='Обязательно приду'
-//         checked={radio === 'Обязательно приду'}
-//         onChange={(event) => {setRadio(event.target.value)}}
-//     />
-//     <label htmlFor="1">Обязательно приду</label>
-// </div>
-//
-// <div className='feedback-form-input-radio'>
-//     <input
-//         type="radio"
-//         id='2'
-//         name='radio'
-//         value='Не смогу прийти'
-//         checked={radio === 'Не смогу прийти'}
-//         onChange={(event) => {setRadio(event.target.value)}}
-//     />
-//     <label htmlFor="2">Не смогу прийти</label>
-// </div>
-
-
-
-// <button
-//     className='feedback-form-input'
-//     type="submit"
-//     disabled={isDisable}>
-//     {
-//         isDisable ? <LinearIndeterminate /> : 'Отправить'
-//     }
-// </button>

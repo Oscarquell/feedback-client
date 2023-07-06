@@ -1,8 +1,7 @@
 .footer {
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
     width: 100%;
     height: auto;
-    padding: 2vh 0 5vh;
+    padding: 0 0 5vh;
 }
 
 .footer-address {
@@ -12,12 +11,6 @@
     font-size: 1.5em;
     width: 90%;
     margin: 0 auto 2vh;
-}
-
-.footer-maps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer-maps-description {
@@ -30,9 +23,10 @@
 .footer-title {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    color: black;
+    color: white;
     font-size: 1.5em;
-    margin: 1em;
+    width: 90%;
+    margin: 0 auto 3vh;
 }
 
 .footer-links {
@@ -55,6 +49,7 @@
     height: 2em;
 }
 
+
 .instagram {
     display: block;
     background: url("../../../src/media/icons/instagram.png") center center/cover no-repeat;
@@ -70,23 +65,4 @@
     background: url("../../../src/media/icons/telegram.png") center center/cover no-repeat;
 }
 
-.footer-maps-icon {
-    width: 2em;
-    height: 2em;
-    margin-left: 1vh;
-}
 
-.two-gis {
-    display: block;
-    background: url("../../../src/media/icons/2gis.png") center center/contain no-repeat;
-}
-
-.google-maps {
-    display: block;
-    background: url("../../../src/media/icons/googlemap.png") center center/contain no-repeat;
-}
-
-.yandex-taxi {
-    display: block;
-    background: url("../../../src/media/icons/yandex.png") center center/contain no-repeat;
-}

@@ -1,7 +1,6 @@
 .feedback-section-bg {
-    /*border-bottom: 1px solid rgba(0, 0, 0, 0.3);*/
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    padding-bottom: 2vh;
+    /*border-bottom: 5px solid rgba(0, 0, 0, 0.3);*/
+    /*padding-bottom: 2vh;*/
 }
 
 .feedback-section-title {
@@ -10,7 +9,7 @@
     text-align: center;
     color: white;
     font-size: 2em;
-    margin: 2vh auto 0;
+    margin: 0 auto;
 }
 
 .feedback-section-timer-wrap {

@@ -13,7 +13,7 @@ function App() {
         <Switch>
             <Route exact path="/" component={Language} />
             <Route exact path="/eventRU" component={MainPageRus} />
-            <Route exact path="/eventKG" component={MainPageKgz} />
+                {/*<Route exact path="/eventKG" component={MainPageKgz} />*/}
         </Switch>
     </div>
   );

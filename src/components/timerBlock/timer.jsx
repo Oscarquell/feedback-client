@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import './style.css'
+import Underline from "../../media/img/razdelitel.png";
 
 const TimerBlock = () => {
 
@@ -101,6 +102,9 @@ const TimerBlock = () => {
                     <p className='feedback-section-timer'>{time.s}</p>
                     <p className='feedback-section-timer-description'>Сек</p>
                 </div>
+            </div>
+            <div className="underline">
+                <img src={Underline} alt="" className="underline-img"/>
             </div>
         </motion.div>
     );

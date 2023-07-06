@@ -5,6 +5,7 @@ import SecondSection from "../../secondSection";
 import FeedbackForm from "../../feedbackForm/feedback";
 import TimerBlock from "../../timerBlock/timer";
 import Footer from "../../footer";
+import Rules from "../../rules-section";
 
 
 const MainPageRus = () => {
@@ -27,6 +28,7 @@ const MainPageRus = () => {
                         <div>
                             <FirstSection />
                             <SecondSection />
+                            <Rules />
                             <FeedbackForm />
                             <TimerBlock />
                             <Footer />
