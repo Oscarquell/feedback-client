@@ -65,7 +65,7 @@ const TimerBlock = () => {
     }
 
 
-    const targetDate = new Date(2023, 6, 20, 14, 18, 0);
+    const targetDate = new Date(2023, 6, 28, 17, 0, 0);
 
 
     React.useEffect(() => {

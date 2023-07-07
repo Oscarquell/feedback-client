@@ -26,11 +26,11 @@ const MainPageRus = () => {
                         <CircularIndeterminate />
                         :
                         <div>
-                            <FirstSection />
                             <SecondSection />
                             <Rules />
                             <FeedbackForm />
                             <TimerBlock />
+                            <FirstSection />
                             <Footer />
                         </div>
                 }

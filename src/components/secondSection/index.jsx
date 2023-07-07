@@ -1,17 +1,16 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import Photo1 from '../../media/img/1.jpg'
-import Bouquet2 from "../../media/img/buket2.png";
 import Underline from '../../media/img/razdelitel.png'
 import './style.css'
-import Bouquet from "../../media/img/buket.png";
+import Bouquet5 from "../../media/img/buket5.png";
 
 const SecondSection = () => {
     return (
         <div className='second-section-bg'>
             <div className="second-section-invite">
                 <div className="bouquet-decoration">
-                    <img src={Bouquet} alt="" className="bouquet"/>
+                    <img src={Bouquet5} alt="" className="bouquet"/>
                 </div>
                 <p className='second-section-invite-title'> Дорогие гости!</p>
                 <p>Совсем скоро в нашей жизни состоится важное и торжественное событие — день нашей свадьбы. Мы искренне желаем, чтобы вы разделили с нами этот прекрасный день и стали свидетелями зарождения новой ячейки общества.</p>

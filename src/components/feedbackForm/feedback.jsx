@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import LoadingButton from "@mui/lab/LoadingButton";
 import SendIcon from "@mui/icons-material/Send";
 import Underline from "../../media/img/razdelitel.png";
-import Bouquet4 from "../../media/img/buket4.png";
+import Bouquet3 from "../../media/img/buket3.png";
 import './style.css'
 
 const FeedbackForm = () => {
@@ -111,7 +111,7 @@ const FeedbackForm = () => {
             transition={{ ease: "easeInOut", duration: 1 }}
             className='feedback-from-bg'>
             <div className="bouquet-decoration">
-                <img src={Bouquet4} alt="" className="bouquet"/>
+                <img src={Bouquet3} alt="" className="bouquet"/>
             </div>
             <h2 className='feedback-form-title'>АНКЕТА ГОСТЯ</h2>
             <p className="feedback-form-description">
