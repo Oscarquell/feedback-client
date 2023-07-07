@@ -32,7 +32,6 @@ const FeedbackForm = () => {
 
         await fetch('https://dry-wildwood-30712-9e60cd0a45ba.herokuapp.com/send', {
             method: 'POST',
-            // mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/json'
             },

@@ -18,9 +18,9 @@
 }
 
 .second-section-invite {
-    color: #757574;
+    color: white;
     font-size: 1.5em;
-    padding: 2vh;
+    padding: 0 2vh 2vh;
     text-align: center;
     font-family: 'Marck Script', cursive;
     text-shadow: 1vh 1vw 1vw gray, 1vh 1vh 1vw gray;
