@@ -4,7 +4,7 @@
 }
 
 .rules-title {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 2em;
     width: 90%;
@@ -14,7 +14,7 @@
 
 .rules-first {
     font-family: 'Playfair Display', serif;
-    color: white;
+    color: black;
     margin: 0 auto;
     text-align: center;
     font-size: 1.2em;

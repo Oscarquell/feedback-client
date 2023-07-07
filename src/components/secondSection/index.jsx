@@ -22,7 +22,7 @@ const SecondSection = () => {
                     className="second-section-photos">
                     <img className='second-section-photo' src={Photo1} alt=""/>
                 </motion.div>
-                <p style={{marginTop: '2vh'}}>Ждём Вас 28 июля 2023 года в летней террасе «Jannat Regency» по адресу: ул. А. Токомбаева 21/2.    </p>
+                <p style={{marginTop: '2vh'}}>Ждём Вас 28 июля 2023 года на летней террасе «Jannat Regency» по адресу: ул. А. Токомбаева 21/2.    </p>
                 <p>Начало — в 17:00.</p>
                 <p>С любовью, Арген и Адинай!</p>
             </div>
