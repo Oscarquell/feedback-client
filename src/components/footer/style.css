@@ -7,14 +7,14 @@
 .footer-address {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    color: black;
+    color: white;
     font-size: 1.5em;
     width: 90%;
     margin: 0 auto 2vh;
 }
 
 .footer-maps-description {
-    color: black;
+    color: white;
     /*font-weight: bold;*/
     text-decoration: underline;
     font-size: 1.5em;
@@ -23,7 +23,7 @@
 .footer-title {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    color: black;
+    color: white;
     font-size: 1.5em;
     width: 90%;
     margin: 0 auto 3vh;

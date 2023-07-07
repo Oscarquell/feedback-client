@@ -4,7 +4,7 @@ import Photo2 from '../../media/img/2.jpg'
 import Underline from '../../media/img/razdelitel.png'
 import './style.css'
 
-const SecondSection = () => {
+const SecondSectionKg = () => {
     return (
         <div className='second-section-bg'>
             <div className="underline">
@@ -12,8 +12,8 @@ const SecondSection = () => {
             </div>
 
             <div className="second-section-invite">
-                <p className='second-section-invite-title'> Дорогие гости!</p>
-                <p style={{marginBottom: '2vh'}}>Совсем скоро в нашей жизни состоится важное и торжественное событие — день нашей свадьбы. Мы искренне желаем, чтобы вы разделили с нами этот прекрасный день и стали свидетелями зарождения новой ячейки общества.</p>
+                <p className='second-section-invite-title'>Урматтуу коноктор!</p>
+                <p style={{marginBottom: '2vh'}}>Биздин жашообузда маанилүү жана салтанаттуу күн - биздин үйлөнүү тоюбуз жакындап келе жатат. Ушул жакшынакай күндү биз менен бөлүшүп, үй-бүлөөбүздүн курулушуна күбө болушуңузду чын жүрөктөн каалайбыз.</p>
                 <motion.div
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
@@ -21,9 +21,9 @@ const SecondSection = () => {
                     className="second-section-photos">
                     <img className='second-section-photo' src={Photo2} alt=""/>
                 </motion.div>
-                <p style={{marginTop: '2vh'}}>Ждём Вас 28 июля 2023 года на летней террасе «Jannat Regency» по адресу: ул. А. Токомбаева 21/2.    </p>
-                <p>Начало — в 17:00.</p>
-                <p>С любовью, Арген и Адинай!</p>
+                <p style={{marginTop: '2vh'}}>Сиздерди 28 июль 2023 жылы «Jannat Regency» мейманканын жайкы террасасында күтөбүз.</p>
+                <p>Дареги: А.Токомбаев 21/1 көчөсү.</p>
+                <p>Башталышы саат 17:00</p>
             </div>
 
             <div className="underline">
@@ -34,4 +34,4 @@ const SecondSection = () => {
     );
 };
 
-export default SecondSection;
+export default SecondSectionKg;

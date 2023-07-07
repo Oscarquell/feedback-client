@@ -5,26 +5,32 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .language-select {
     color: white;
     text-align: center;
     margin-bottom: 5vh;
+    width: 80%;
+}
 
+.language-wrap {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .languages {
     color: white;
     text-align: center;
     margin-bottom: 2.5vh;
-    width: 80%;
+    width: 15%;
+    height: max-content;
     background: gray;
     border-radius: 20px;
+    transition: 0.5s;
 }
 
-.languages:active {
-    color: black;
-    background: white;
+.language-flags {
+    max-width: 100%;
+    height: auto;
 }

@@ -1,14 +1,19 @@
 import React from 'react';
-import './style.css'
 import Underline from "../../media/img/razdelitel.png";
+import { motion } from "framer-motion";
+import './style.css'
 
 const FirstSection = () => {
 
     return (
-            <div className='first-section-bg'>
+            <motion.div
+                className='first-section-bg'
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{ ease: "easeInOut", duration: 1 }}>
                     <p className="first-section-janat">Место проведения</p>
                     <p className="first-section-janat">«Jannat Regency»</p>
-                    <p className="first-section-janat">28.07.2023</p>
+                    <p className="first-section-janat">28.07.2023 в 17:00</p>
                     <div className='first-section-maps-wrap'>
                         <a className='first-section-maps two-gis' target="_blank" href="https://go.2gis.com/hc98u" />
                         <a className=' first-section-maps google-maps' target="_blank" href="https://goo.gl/maps/M6wRdX2y3WxPBjfaA" />
@@ -18,7 +23,7 @@ const FirstSection = () => {
                      <div className="underline">
                         <img src={Underline} alt="" className="underline-img"/>
                     </div>
-            </div>
+            </motion.div>
     );
 };
 

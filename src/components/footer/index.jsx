@@ -1,9 +1,14 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import './style.css'
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <motion.div
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{ ease: "easeInOut", duration: 1 }}
+            className='footer'>
             <div className="footer-title">
                 По любым вопросам можете связаться с нами:
             </div>
@@ -15,7 +20,7 @@ const Footer = () => {
                     <i className='footer-icons telegram'></i>
                 </a>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
