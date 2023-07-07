@@ -3,7 +3,7 @@
 }
 
 .feedback-form-title {
-    color: white;
+    color: #757574;
     text-align: center;
     font-size: 2em;
     width: 90%;
@@ -13,7 +13,7 @@
 
 .feedback-form-description {
     font-family: 'Playfair Display', serif;
-    color: white;
+    color: #757574;
     margin: 0 auto;
     text-align: center;
     font-size: 1.2em;
@@ -29,13 +29,13 @@
     border-radius: 20px;
     text-align: center;
     background: white;
-    color: black;
+    color: #757574;
     font-family: 'Playfair Display', serif;
 }
 
 .feedback-form-input-rules {
     text-align: right;
-    padding-right: 2.8em;
+    padding-right: 1.5em;
     color: red;
     font-family: 'Playfair Display', serif;
 }
@@ -82,7 +82,7 @@
     height: 7em;
     /*border: 1px solid black;*/
     background: url("../../../src/media/img/buket.png") center center/contain no-repeat;
-    color: white;
+    color: #757574;
     font-size: 1.5em;
     padding: 2vh;
     text-align: center;
