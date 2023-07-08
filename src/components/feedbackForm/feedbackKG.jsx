@@ -109,9 +109,9 @@ const FeedbackFormKg = () => {
             transition={{ease: "easeInOut", duration: 1}}
             className='feedback-from-bg'
         >
-            <div className="bouquet-decoration">
-                <img src={Bouquet3} alt="" className="bouquet"/>
-            </div>
+            {/*<div className="bouquet-decoration">*/}
+            {/*    <img src={Bouquet3} alt="" className="bouquet"/>*/}
+            {/*</div>*/}
             <h2 className='feedback-form-title'>КОНОКТУН АНКЕТАСЫ</h2>
             <p className="feedback-form-description">
                 Сураныч, катышууңузду тактап коюңуз
@@ -199,9 +199,9 @@ const FeedbackFormKg = () => {
             {inputValidation && <div className='feedback-form-validation'>Пожалуйста, заполните форму обратной связи</div>}
             {errorMessage && <div className='feedback-form-validation'>Произошла ошибка при отправке сообщения...</div>}
 
-            <div className="bouquet-decoration reverse">
-                <img src={Bouquet3} alt="" className="bouquet"/>
-            </div>
+            {/*<div className="bouquet-decoration reverse">*/}
+            {/*    <img src={Bouquet3} alt="" className="bouquet"/>*/}
+            {/*</div>*/}
 
             <div className="underline">
                 <img src={Underline} alt="" className="underline-img"/>
