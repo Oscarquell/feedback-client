@@ -22,6 +22,7 @@ const FeedbackForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!name || !secondName || !presence) {
       setErrorMessage(false)
       SetIsSended(false);
@@ -119,6 +120,7 @@ const FeedbackForm = () => {
       <form onSubmit={handleSubmit}>
         <TextField
           sx={inputSettings}
+          value={name}
           className='text-field'
           fullWidth
           color='secondary'
@@ -129,6 +131,7 @@ const FeedbackForm = () => {
 
         <TextField
           sx={inputSettings}
+          value={secondName}
           className='text-field'
           fullWidth
           label="Ваша фамилия"
@@ -139,11 +142,11 @@ const FeedbackForm = () => {
         <div className='feedback-form-input-radio'>
           <Radio
             sx={radioSettings}
-            checked={presence === 'Обязательно буду'}
+            checked={presence === "Обязательно буду"}
             onChange={(event) => {
               setPresence(event.target.value)
             }}
-            value="Обязательно буду"
+            value='Обязательно буду'
             name="radio-buttons"
             inputProps={{'aria-label': 'A'}}
             id='1'
@@ -154,11 +157,11 @@ const FeedbackForm = () => {
         <div className='feedback-form-input-radio'>
           <Radio
             sx={radioSettings}
-            checked={presence === 'К сожалению, не приду'}
+            checked={presence === "К сожалению, не приду"}
             onChange={(event) => {
               setPresence(event.target.value)
             }}
-            value="К сожалению, не приду"
+            value='К сожалению, не приду'
             name="radio-buttons"
             inputProps={{'aria-label': 'B'}}
             id='2'
