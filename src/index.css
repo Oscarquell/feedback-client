@@ -10,7 +10,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to bottom, #696969, #808080, #A9A9A9);
+  /*background-image: linear-gradient(to bottom, #696969, #808080, #A9A9A9);*/
+  background: #a9b3b4;
   box-shadow: 0 0 20px 10px #262626 inset;
 }
 
