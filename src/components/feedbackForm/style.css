@@ -1,91 +1,94 @@
 .feedback-from-bg {
-    /*border-bottom: 5px solid rgba(0, 0, 0, 0.3);*/
+}
+
+.bouquet-decoration {
+  width: 90%;
+  height: max-content;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.bouquet-decoration.reverse {
+  margin-top: 15px;
+  transform: rotateX(-180deg);
+}
+
+.bouquet {
+  max-width: 100%;
+  height: auto;
 }
 
 .feedback-form-title {
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    width: 90%;
-    margin: 0 auto;
-    font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Playfair Display', serif;
 }
 
 .feedback-form-description {
-    font-family: 'Playfair Display', serif;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.2em;
-    width: 90%;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+  width: 90%;
 }
 
-.feedback-form-input {
-    margin: 0.2em auto 0;
-    display: block;
-    height: 1.7em;
-    width: 80%;
-    font-size: 1.5em;
-    border-radius: 20px;
-    text-align: center;
-    background: white;
-    color: white;
-    font-family: 'Playfair Display', serif;
+.text-field {
+  color: red;
 }
 
-.feedback-form-input-rules {
-    text-align: right;
-    padding-right: 1.5em;
-    color: red;
-    font-family: 'Playfair Display', serif;
+.text-field .MuiFormLabel-root.Mui-focused{
+  color: #000000;
 }
 
-.custom-textarea {
-    font-family: 'Playfair Display', serif;
-    height: 3em;
+.text-field .MuiInputBase-root.Mui-focused {
+  color: #000000;
+}
+
+.text-field .MuiInputBase-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #000000;
 }
 
 .feedback-form-input-radio {
-    max-width: 90%;
-    font-size: 1em;
-    margin: 0 auto;
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
-    font-weight: 400;
+  max-width: 90%;
+  font-size: 1em;
+  margin: 0 auto;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.feedback-form-input-radio .MuiRadio-root.Mui-checked {
+  color: unset;
 }
 
 .feedback-form-sended {
-    font-size: 1.5em;
-    text-align: center;
-    color: green;
-    font-family: 'Playfair Display', serif;
-    width: 80%;
-    margin: 0 auto;
+  font-size: 1.5em;
+  text-align: center;
+  color: green;
+  font-family: 'Playfair Display', serif;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .feedback-form-validation {
-    color: red;
-    font-size: 1.5em;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    width: 80%;
-    margin: 0 auto;
+  color: red;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .feedback-form-send-input {
-    text-align: center;
-    margin-top: 0.5em;
+  text-align: center;
+  margin-top: 0.5em;
 }
 
-.feedback-section-bouquet {
-    margin: 0 auto;
-    width: 90%;
-    height: 7em;
-    /*border: 1px solid black;*/
-    background: url("../../../src/media/img/buket.png") center center/contain no-repeat;
-    color: white;
-    font-size: 1.5em;
-    padding: 2vh;
-    text-align: center;
-    font-family: 'Marck Script', cursive;
-    text-shadow: 1vh 1vw 1vw gray, 1vh 1vh 1vw gray;
+.feedback-form-send-input .MuiButton-root:hover {
+  border-color: inherit;
+  background-color: unset;
 }
+

@@ -1,49 +1,32 @@
-.feedback-section-bg {
-    /*border-bottom: 5px solid rgba(0, 0, 0, 0.3);*/
-    /*padding-bottom: 2vh;*/
+.timer-section-bg {
+  font-family: 'Marck Script', cursive;
 }
 
-.feedback-section-title {
-    font-family: 'Playfair Display', serif;
-    width: 90%;
-    text-align: center;
-    color: white;
-    font-size: 2em;
-    margin: 0 auto;
+.timer-section-title {
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  margin: 0 auto;
 }
 
-.feedback-section-timer-wrap {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-content: center;
+.timer-section-timer-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center;
 }
 
-.feedback-section-timer-app {
-    text-align: center;
-    color: white;
-    margin: 0 auto;
-    width: 90%;
-    font-family: 'Playfair Display', serif;
+.timer-section-timer-app {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  width: 90%;
 }
 
-.feedback-section-timer {
-    font-size: 1.5em;
+.timer-section-timer {
+  font-size: 1.8em;
 }
 
-.feedback-section-timer-description {
-    text-align: center;
+.timer-section-timer-description {
+  text-align: center;
 }
-
-/*@media (max-width: 320px) {*/
-/*    .feedback-section-title {*/
-/*        text-align: center;*/
-/*        color: white;*/
-/*        font-size: 1.5em;*/
-/*    }*/
-/*    .feedback-section-timer {*/
-/*        font-size: 1.5em;*/
-/*    }*/
-/*    .feedback-section-timer-description {*/
-/*        font-size: 0.7em;*/
-/*    }*/
-/*}*/

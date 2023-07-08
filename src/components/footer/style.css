@@ -1,68 +1,91 @@
 .footer {
-    width: 100%;
-    height: auto;
-    padding: 0 0 5vh;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0 0 5vh;
 }
 
-.footer-address {
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
-    width: 90%;
-    margin: 0 auto 2vh;
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.footer-maps-description {
-    color: white;
-    /*font-weight: bold;*/
-    text-decoration: underline;
-    font-size: 1.5em;
-}
-
-.footer-title {
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
-    width: 90%;
-    margin: 0 auto 3vh;
+.title {
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  color: white;
+  font-size: 1em;
+  min-width: 150px;
 }
 
 .footer-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 2em;
-    margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-link {
-    display: block;
-    width: 2em;
-    height: 2em;
-    padding: 0 3em 0 3em;
+  display: block;
+  width: 2em;
+  height: 2em;
+  margin-right: 5px;
 }
 
 .footer-icons {
-    width: 2em;
-    height: 2em;
+  width: 2em;
+  height: 2em;
 }
 
-
 .instagram {
-    display: block;
-    background: url("../../../src/media/icons/instagram.png") center center/cover no-repeat;
+  display: block;
+  background: url("../../../src/media/icons/instagram.png") center center/cover no-repeat;
 }
 
 .whatsapp {
-    display: block;
-    background: url("../../../src/media/icons/whatsapp.png") center center/cover no-repeat;
+  display: block;
+  background: url("../../../src/media/icons/whatsapp.png") center center/cover no-repeat;
 }
 
 .telegram {
-    display: block;
-    background: url("../../../src/media/icons/telegram.png") center center/cover no-repeat;
+  display: block;
+  background: url("../../../src/media/icons/telegram.png") center center/cover no-repeat;
 }
 
+/*-----------------------------*/
+.footer-address {
+  display: flex;
+  align-items: center;
+}
+
+.first-section-bg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.first-section-maps-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.first-section-maps {
+  width: 2em;
+  height: 2em;
+  margin-right: 5px;
+}
+
+.two-gis {
+  display: block;
+  background: url("../../../src/media/icons/2gis.png") center center/cover no-repeat;
+}
+
+.google-maps {
+  display: block;
+  background: url("../../../src/media/icons/googlemap.png") center center/contain no-repeat;
+}
+
+.yandex-taxi {
+  display: block;
+  background: url("../../../src/media/icons/yandex.png") center center/contain no-repeat;
+}
 
