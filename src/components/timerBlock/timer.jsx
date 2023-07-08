@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 import Underline from "../../media/img/razdelitel.png";
 import './style.css'
 
-const TimerBlock = () => {
+const TimerBlockKg = () => {
 
   const [time, setTime] = React.useState({})
 
@@ -81,20 +81,20 @@ const TimerBlock = () => {
       transition={{ease: "easeInOut", duration: 1}}
       className='timer-section-bg'>
       <div className="timer-section-title">
-        До мероприятия осталось:
+        Иш-чаранын алдында калган:
       </div>
       <div className="timer-section-timer-wrap">
         <div className="timer-section-timer-app">
           <p className='timer-section-timer'>{time.d}</p>
-          <p className='timer-section-timer-description'>Дни</p>
+          <p className='timer-section-timer-description'>Күн</p>
         </div>
         <div className="timer-section-timer-app">
           <p className='timer-section-timer'>{time.h}</p>
-          <p className='timer-section-timer-description'>Часы</p>
+          <p className='timer-section-timer-description'>Саат</p>
         </div>
         <div className="timer-section-timer-app">
           <p className='timer-section-timer'>{time.m}</p>
-          <p className='timer-section-timer-description'>Мин</p>
+          <p className='timer-section-timer-description'>Мүнөт</p>
         </div>
         <div className="timer-section-timer-app">
           <p className='timer-section-timer'>{time.s}</p>
@@ -108,4 +108,4 @@ const TimerBlock = () => {
   );
 }
 
-export default TimerBlock;
+export default TimerBlockKg;
