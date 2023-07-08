@@ -7,9 +7,6 @@ import './style.css'
 const Language = () => {
     return (
         <div className='language'>
-            <h2 className="language-select">
-                Выберите язык / Тилди таңдоо
-            </h2>
             <div className="language-wrap">
                 <h3 className="languages">
                     <Link to='/eventRU'>
