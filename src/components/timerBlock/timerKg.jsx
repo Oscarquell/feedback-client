@@ -81,7 +81,7 @@ const TimerBlockKg = () => {
             transition={{ease: "easeInOut", duration: 1}}
             className='timer-section-bg'>
             <div className="timer-section-title">
-                Иш-чаранын алдында калган:
+                Үйлөнүү тойго чейин:
             </div>
             <div className="timer-section-timer-wrap">
                 <div className="timer-section-timer-app">
