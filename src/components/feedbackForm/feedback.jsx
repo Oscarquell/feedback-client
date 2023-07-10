@@ -114,7 +114,7 @@ const FeedbackForm = () => {
       {/*</div>*/}
       <h2 className='feedback-form-title'>АНКЕТА ГОСТЯ</h2>
       <p className="feedback-form-description">
-        Пожалуйста, подтвердите свое присутствие на торжестве до 20 июля
+        Пожалуйста, подтвердите свое присутствие на торжестве до 23 июля
       </p>
 
       <form onSubmit={handleSubmit}>
