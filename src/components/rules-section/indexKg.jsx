@@ -45,14 +45,10 @@ const RulesKg = () => {
             </div>
             <h2 className="rules-title">Каалоолор жана сунуштар</h2>
             <p className="rules-first">Сураныч, сиздер  ыңгайлуу жана көңүлдүү эс алып кетүүңөр үчүн бала коноктордун коштоосу жок келиңиздер</p>
-            <p className="rules-first">Белгиленген убакытка келип берүүңөрдү өтүнөбүз</p>
             <div className="underline">
                 <img src={Underline} alt="" className="underline-img"/>
             </div>
-            <h2
-                style={{margin: '0 auto'}}
-                className="rules-title">Дресс-код</h2>
-            <p className="rules-first">Будем очень признательны, если вы поддержите стиль и цвет нашей свадьбы. Просим Вас прийти в нарядах без присутствия в них оттенков белого</p>
+            <p className="rules-first">Белгиленген убакытка келип берүүңөрдү өтүнөбүз</p>
             <div className="underline">
                 <img src={Underline} alt="" className="underline-img"/>
             </div>

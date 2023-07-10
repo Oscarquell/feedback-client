@@ -46,17 +46,14 @@ const Rules = () => {
       <h2 className="rules-title">Подсказки и пожелания</h2>
       <p className="rules-first">Убедительная просьба, для Вашего комфортного времяпровождения прийти без сопровождения
         детей</p>
+      <div className="underline">
+        <img src={Underline} alt="" className="underline-img"/>
+      </div>
       <p className="rules-first">Мы очень готовились к нашему празднику и будем рады, если Вы придете вовремя</p>
       <div className="underline">
         <img src={Underline} alt="" className="underline-img"/>
       </div>
-        <h2
-            style={{margin: '0 auto'}}
-            className="rules-title">Дресс-код</h2>
-        <p className="rules-first">Будем очень признательны, если вы поддержите стиль и цвет нашей свадьбы. Просим Вас прийти в нарядах без присутствия в них оттенков белого</p>
-        <div className="underline">
-        <img src={Underline} alt="" className="underline-img"/>
-      </div>
+
     </motion.div>
   );
 };
