@@ -12,7 +12,7 @@ const FooterKg = () => {
         >
             <div className='footer-contacts'>
                 <div className="title">
-                    Байланыштар:
+                    Байланыш:
                 </div>
                 <div className="footer-links">
                     <a className='footer-link' href="https://wa.me/996708654585">

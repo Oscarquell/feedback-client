@@ -1,5 +1,5 @@
 import React from 'react';
-import Photo1 from "../../media/img/1.jpg";
+import Photo2 from "../../media/img/2.jpg";
 import Photo3 from "../../media/img/3.jpg";
 import Photo4 from "../../media/img/4.jpg";
 import Underline from "../../media/img/razdelitel.png";
@@ -33,7 +33,7 @@ const Rules = () => {
       <div className="second-section-photos">
         <Slider {...settings}>
           <div>
-            <img className='second-section-photo' src={Photo1} alt=""/>
+            <img className='second-section-photo' src={Photo2} alt=""/>
           </div>
           <div>
             <img className='second-section-photo' src={Photo3} alt=""/>
@@ -53,10 +53,10 @@ const Rules = () => {
       <div className="underline">
         <img src={Underline} alt="" className="underline-img"/>
       </div>
+
     </motion.div>
   );
 };
 
 export default Rules;
 
-// <img src={Photo2} alt="" className="second-section-photo"/>

@@ -13,7 +13,7 @@ const TimerBlockKg = () => {
         const timeDiff = targetDate.getTime() - currentDate.getTime();
 
         if (timeDiff <= 0) {
-            return 'Мероприятие началось!';
+            return 'Үйлөнүү той башталды!';
         }
 
         const seconds = Math.floor(timeDiff / 1000) % 60;
@@ -81,7 +81,7 @@ const TimerBlockKg = () => {
             transition={{ease: "easeInOut", duration: 1}}
             className='timer-section-bg'>
             <div className="timer-section-title">
-                Иш-чаранын алдында калган:
+                Үйлөнүү тойго чейин:
             </div>
             <div className="timer-section-timer-wrap">
                 <div className="timer-section-timer-app">

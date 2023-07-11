@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import Photo2 from '../../media/img/2.jpg'
+import Photo1 from '../../media/img/1.jpg'
 import Underline from '../../media/img/razdelitel.png'
 import './style.css'
 
@@ -19,7 +19,7 @@ const SecondSectionKg = () => {
                     whileInView={{opacity: 1}}
                     transition={{ ease: "easeInOut", duration: 1.5 }}
                     className="second-section-photos">
-                    <img className='second-section-photo' src={Photo2} alt=""/>
+                    <img className='second-section-photo' src={Photo1} alt=""/>
                 </motion.div>
                 <p style={{marginTop: '2vh'}}>Сиздерди 28 июль 2023 жылы «Jannat Regency» мейманканын жайкы террасасында күтөбүз.</p>
                 <p>Дареги: А.Токомбаев 21/1 көчөсү.</p>

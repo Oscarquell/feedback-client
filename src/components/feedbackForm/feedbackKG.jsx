@@ -194,9 +194,9 @@ const FeedbackFormKg = () => {
 
             </form>
 
-            {isSended && <div className='feedback-form-sended'>Сообщение доставлено!</div>}
-            {inputValidation && <div className='feedback-form-validation'>Пожалуйста, заполните форму обратной связи</div>}
-            {errorMessage && <div className='feedback-form-validation'>Произошла ошибка при отправке сообщения...</div>}
+            {isSended && <div className='feedback-form-sended'>Ката кетти!</div>}
+            {inputValidation && <div className='feedback-form-validation'>Сураныч, анкетаны толтуруңуз</div>}
+            {errorMessage && <div className='feedback-form-validation'>Аракетиңизди кечирээк кайталап көрүңүз ...</div>}
 
             {/*<div className="bouquet-decoration reverse">*/}
             {/*    <img src={Bouquet3} alt="" className="bouquet"/>*/}
