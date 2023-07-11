@@ -6,7 +6,6 @@ import Box from "@mui/material/Box";
 import LoadingButton from "@mui/lab/LoadingButton";
 import SendIcon from "@mui/icons-material/Send";
 import Underline from "../../media/img/razdelitel.png";
-import Bouquet3 from "../../media/img/buket3.png";
 import './style.css'
 
 const FeedbackFormKg = () => {
