@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import Photo2 from '../../media/img/2.jpg'
+import Photo1 from '../../media/img/1.jpg'
 import Underline from '../../media/img/razdelitel.png'
 import './style.css'
 
@@ -19,7 +19,7 @@ const SecondSection = () => {
                     whileInView={{opacity: 1}}
                     transition={{ ease: "easeInOut", duration: 1.5 }}
                     className="second-section-photos">
-                    <img className='second-section-photo' src={Photo2} alt=""/>
+                    <img className='second-section-photo' src={Photo1} alt=""/>
                 </motion.div>
                 <p style={{marginTop: '2vh'}}>Ждём Вас 28 июля 2023 года на летней террасе «Jannat Regency» по адресу: ул. А. Токомбаева 21/2.    </p>
                 <p>Начало — в 17:00.</p>
