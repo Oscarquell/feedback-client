@@ -1,6 +1,19 @@
 .language {
     width: 100%;
     height: 100vh;
+}
+
+.language-title {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    width: 90%;
+    margin: 0 auto 3vh;
+}
+
+.language-wrap {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

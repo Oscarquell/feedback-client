@@ -195,7 +195,7 @@ const FeedbackFormKg = () => {
 
             </form>
 
-            {isSended && <div className='feedback-form-sended'>Ката кетти!</div>}
+            {isSended && <div className='feedback-form-sended'>Жооп жөнөтүлдү!</div>}
             {inputValidation && <div className='feedback-form-validation'>Сураныч, анкетаны толтуруңуз</div>}
             {errorMessage && <div className='feedback-form-validation'>Аракетиңизди кечирээк кайталап көрүңүз ...</div>}
 

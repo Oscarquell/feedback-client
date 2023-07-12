@@ -8,6 +8,7 @@ const Language = () => {
     return (
         <div className='language'>
             <div className="language-wrap">
+                <div className="language-title">Выберите язык / Тилди таңдаңыз</div>
                 <h3 className="languages">
                     <Link to='/eventRU'>
                         <img className='language-flags' src={RUS} alt=""/>
