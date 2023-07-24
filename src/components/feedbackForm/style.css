@@ -92,3 +92,11 @@
   background-color: unset;
 }
 
+.feedback-form-term-is-over {
+  width: 80%;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin: 1vh auto 0;
+  font-size: 1.2em;
+  color: white;
+}

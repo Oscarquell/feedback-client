@@ -82,7 +82,7 @@ const FeedbackForm = () => {
     maxWidth: '90%',
     margin: '0.5em auto 0',
     display: 'block',
-    fontSize: '1.5em',
+    fontSize: '1.5em'
   }
 
   const radioSettings = {
@@ -126,6 +126,7 @@ const FeedbackForm = () => {
           color='secondary'
           label="Ваше имя"
           id="fullWidth"
+          disabled={true}
           onChange={(e) => setName(e.target.value)}
         />
 
@@ -136,6 +137,7 @@ const FeedbackForm = () => {
           fullWidth
           label="Ваша фамилия"
           id="fullWidth"
+          disabled={true}
           onChange={(e) => setSecondName(e.target.value)}
         />
 
@@ -143,6 +145,7 @@ const FeedbackForm = () => {
           <Radio
             sx={radioSettings}
             checked={presence === "Обязательно буду"}
+            disabled={true}
             onChange={(event) => {
               setPresence(event.target.value)
             }}
@@ -158,6 +161,7 @@ const FeedbackForm = () => {
           <Radio
             sx={radioSettings}
             checked={presence === "К сожалению, не приду"}
+            disabled={true}
             onChange={(event) => {
               setPresence(event.target.value)
             }}
@@ -174,6 +178,7 @@ const FeedbackForm = () => {
           className='text-field'
           fullWidth label="Предложения или пожелания"
           id="fullWidth"
+          disabled={true}
           onChange={(e) => setMessage(e.target.value)}
         />
 
@@ -185,6 +190,7 @@ const FeedbackForm = () => {
               endIcon={<SendIcon/>}
               loading={isDisable}
               loadingPosition="end"
+              disabled={true}
               variant="outlined"
             >
               <span>Отправить</span>
@@ -198,7 +204,7 @@ const FeedbackForm = () => {
       {isSended && <div className='feedback-form-sended'>Сообщение доставлено!</div>}
       {inputValidation && <div className='feedback-form-validation'>Пожалуйста, заполните форму обратной связи</div>}
       {errorMessage && <div className='feedback-form-validation'>Произошла ошибка при отправке сообщения...</div>}
-
+      <div className="feedback-form-term-is-over">Пожалуйста, обратите внимание, что срок заполнения анкеты завершился</div>
       {/*<div className="bouquet-decoration reverse">*/}
       {/*  <img src={Bouquet3} alt="" className="bouquet"/>*/}
       {/*</div>*/}

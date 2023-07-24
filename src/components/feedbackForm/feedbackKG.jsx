@@ -125,6 +125,7 @@ const FeedbackFormKg = () => {
                     color='secondary'
                     label="Атыңыз"
                     id="fullWidth"
+                    disabled={true}
                     onChange={(e) => setName(e.target.value)}
                 />
 
@@ -135,6 +136,7 @@ const FeedbackFormKg = () => {
                     fullWidth
                     label="Фамилияңыз"
                     id="fullWidth"
+                    disabled={true}
                     onChange={(e) => setSecondName(e.target.value)}
                 />
 
@@ -149,6 +151,7 @@ const FeedbackFormKg = () => {
                         name="radio-buttons"
                         inputProps={{'aria-label': 'A'}}
                         id='1'
+                        disabled={true}
                     />
                     <label htmlFor="1">Сөзсүз келем</label>
                 </div>
@@ -164,6 +167,7 @@ const FeedbackFormKg = () => {
                         name="radio-buttons"
                         inputProps={{'aria-label': 'B'}}
                         id='2'
+                        disabled={true}
                     />
                     <label htmlFor="2">Келе албайм</label>
                 </div>
@@ -173,6 +177,7 @@ const FeedbackFormKg = () => {
                     className='text-field'
                     fullWidth label="Сунуштар жана каалоолор"
                     id="fullWidth"
+                    disabled={true}
                     onChange={(e) => setMessage(e.target.value)}
                 />
 
@@ -185,6 +190,7 @@ const FeedbackFormKg = () => {
                             loading={isDisable}
                             loadingPosition="end"
                             variant="outlined"
+                            disabled={true}
                         >
                             <span>Жөнөтүү</span>
                         </LoadingButton>
@@ -197,6 +203,8 @@ const FeedbackFormKg = () => {
             {isSended && <div className='feedback-form-sended'>Жооп жөнөтүлдү!</div>}
             {inputValidation && <div className='feedback-form-validation'>Сураныч, анкетаны толтуруңуз</div>}
             {errorMessage && <div className='feedback-form-validation'>Аракетиңизди кечирээк кайталап көрүңүз ...</div>}
+            <div className="feedback-form-term-is-over">Арыз берүүнүн акыркы мөөнөтү бүттү.</div>
+
 
             {/*<div className="bouquet-decoration reverse">*/}
             {/*    <img src={Bouquet3} alt="" className="bouquet"/>*/}
