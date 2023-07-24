@@ -206,7 +206,7 @@ const FeedbackFormKg = () => {
             <div className="feedback-form-term-is-over">Арыз берүүнүн акыркы мөөнөтү бүттү.</div>
 
 
-            {/*<div className="bouquet-decoration reverse">*/}
+            {/*<div className="bouquet-decoration reverse">*/}1
             {/*    <img src={Bouquet3} alt="" className="bouquet"/>*/}
             {/*</div>*/}
 

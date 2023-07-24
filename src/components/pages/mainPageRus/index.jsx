@@ -11,7 +11,7 @@ const MainPageRus = () => {
       <SecondSection/>
       <Rules/>
       <TimerBlock/>
-      <FeedbackForm/>
+      {/*<FeedbackForm/>*/}
       <Footer/>
     </>
   );

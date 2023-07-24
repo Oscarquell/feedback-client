@@ -11,7 +11,7 @@ const MainPageRus = () => {
             <SecondSectionKg/>
             <RulesKg />
             <TimerBlockKg />
-            <FeedbackFormKg />
+            {/*<FeedbackFormKg />*/}
             <FooterKg />
         </>
     );
