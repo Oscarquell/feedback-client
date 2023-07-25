@@ -3,6 +3,7 @@ import SecondSectionKg from "../../secondSection/indexKg";
 import RulesKg from "../../rules-section/indexKg";
 import FooterKg from "../../footer/indexKg";
 import TimerBlockKg from "../../timerBlock/timerKg";
+import FeedbackFormKg from "../../feedbackForm/feedbackKG";
 
 const MainPageRus = () => {
     return (
@@ -10,6 +11,7 @@ const MainPageRus = () => {
             <SecondSectionKg/>
             <RulesKg />
             <TimerBlockKg />
+            <FeedbackFormKg />
             <FooterKg />
         </>
     );
