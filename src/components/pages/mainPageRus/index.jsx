@@ -3,6 +3,7 @@ import SecondSection from "../../secondSection";
 import TimerBlock from "../../timerBlock/timer";
 import Footer from "../../footer";
 import Rules from "../../rules-section";
+import FeedbackForm from "../../feedbackForm/feedback";
 
 const MainPageRus = () => {
   return (
@@ -10,7 +11,7 @@ const MainPageRus = () => {
         <SecondSection/>
         <Rules/>
         <TimerBlock/>
-        {/*<FeedbackForm />*/}
+        <FeedbackForm />
         <Footer/>
     </>
   );
