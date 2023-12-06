@@ -13,7 +13,7 @@ const TimerBlock = () => {
     const timeDiff = targetDate.getTime() - currentDate.getTime();
 
     if (timeDiff <= 0) {
-      return 'Мероприятие началось!';
+      return 'До годовщины осталось:';
     }
 
     const seconds = Math.floor(timeDiff / 1000) % 60;
@@ -63,7 +63,7 @@ const TimerBlock = () => {
   }
 
 
-  const targetDate = new Date(2023, 6, 28, 17, 0, 0);
+  const targetDate = new Date(2024, 6, 28, 17, 0, 0);
 
 
   React.useEffect(() => {
@@ -81,7 +81,7 @@ const TimerBlock = () => {
       transition={{ease: "easeInOut", duration: 1}}
       className='timer-section-bg'>
       <div className="timer-section-title">
-        До мероприятия осталось:
+        До годовщины осталось:
       </div>
       <div className="timer-section-timer-wrap">
         <div className="timer-section-timer-app">

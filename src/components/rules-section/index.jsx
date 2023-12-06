@@ -44,12 +44,11 @@ const Rules = () => {
         </Slider>
       </div>
       <h2 className="rules-title">Подсказки и пожелания</h2>
-      <p className="rules-first">Убедительная просьба, для Вашего комфортного времяпровождения прийти без сопровождения
-        детей</p>
+      <p className="rules-first">Каждый из вас внес свой вклад в наше счастье.</p>
       <div className="underline">
         <img src={Underline} alt="" className="underline-img"/>
       </div>
-      <p className="rules-first">Мы очень готовились к нашему празднику и будем рады, если Вы придете вовремя</p>
+      <p className="rules-first">Наши сердечные благодарности за ваше участие в нашем празднике! Этот сайт — наш способ сохранить те чудесные моменты, которые мы разделили вместе. </p>
       <div className="underline">
         <img src={Underline} alt="" className="underline-img"/>
       </div>

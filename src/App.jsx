@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
         <Switch>
-            <Route exact path="/" component={Language} />
-            <Route exact path="/eventRU" component={MainPageRus} />
-            <Route exact path="/eventKG" component={MainPageKgz} />
+            <Route exact path="/" component={MainPageRus} />
+            {/*<Route exact path="/eventRU" component={MainPageRus} />*/}
+            {/*<Route exact path="/eventKG" component={MainPageKgz} />*/}
         </Switch>
     </div>
   );

@@ -126,6 +126,7 @@ const FeedbackForm = () => {
           label="Ваше имя"
           id="fullWidth"
           onChange={(e) => setName(e.target.value)}
+          disabled={true}
         />
 
         <TextField
@@ -136,6 +137,7 @@ const FeedbackForm = () => {
           label="Ваша фамилия"
           id="fullWidth"
           onChange={(e) => setSecondName(e.target.value)}
+          disabled={true}
         />
 
         <div className='feedback-form-input-radio'>
@@ -149,6 +151,7 @@ const FeedbackForm = () => {
             name="radio-buttons"
             inputProps={{'aria-label': 'A'}}
             id='1'
+            disabled={true}
           />
           <label htmlFor="1">Обязательно буду</label>
         </div>
@@ -164,6 +167,7 @@ const FeedbackForm = () => {
             name="radio-buttons"
             inputProps={{'aria-label': 'B'}}
             id='2'
+            disabled={true}
           />
           <label htmlFor="2">К сожалению, не приду</label>
         </div>
@@ -174,6 +178,7 @@ const FeedbackForm = () => {
           fullWidth label="Предложения или пожелания"
           id="fullWidth"
           onChange={(e) => setMessage(e.target.value)}
+          disabled={true}
         />
 
         <div className='feedback-form-send-input'>
@@ -185,6 +190,7 @@ const FeedbackForm = () => {
               loading={isDisable}
               loadingPosition="end"
               variant="outlined"
+              disabled={true}
             >
               <span>Отправить</span>
             </LoadingButton>

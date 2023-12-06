@@ -13,7 +13,7 @@ const SecondSection = () => {
 
             <div className="second-section-invite">
                 <p className='second-section-invite-title'> Дорогие гости!</p>
-                <p style={{marginBottom: '2vh'}}>Совсем скоро в нашей жизни состоится важное и торжественное событие — день нашей свадьбы. Мы искренне желаем, чтобы вы разделили с нами этот прекрасный день и стали свидетелями зарождения новой ячейки общества.</p>
+                <p style={{marginBottom: '2vh'}}>Спасибо, что разделили с нами радость нашего важного дня! Наша свадьба прошла волшебно, и мы счастливы, что Вы были с нами, чтобы поделиться этим моментом.</p>
                 <motion.div
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
@@ -21,8 +21,7 @@ const SecondSection = () => {
                     className="second-section-photos">
                     <img className='second-section-photo' src={Photo1} alt=""/>
                 </motion.div>
-                <p style={{marginTop: '2vh'}}>Ждём Вас 28 июля 2023 года на летней террасе «Jannat Regency» по адресу: ул. А. Токомбаева 21/2.    </p>
-                <p>Начало — в 17:00.</p>
+                <p style={{marginTop: '2vh'}}>Этот сайт — наш виртуальный альбом воспоминаний. Посмотрите на фотографии и вспоминайте с нами это чудесное событие </p>
                 <p>С любовью, Арген и Адинай!</p>
             </div>
 
